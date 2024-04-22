@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  margin: 0;
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}

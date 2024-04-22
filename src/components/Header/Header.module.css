@@ -1,0 +1,16 @@
+.isActive {
+  position: relative;
+}
+
+.isActive::after {
+  content: " ";
+  position: absolute;
+  right: -11px;
+  bottom: 11px;
+
+  display: block;
+  background-color: #fe1b1c;
+  width: 5px;
+  height: 5px;
+  border-radius: 60%;
+}
