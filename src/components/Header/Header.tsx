@@ -46,7 +46,7 @@ interface IHeaderProps {
 
 export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
   return (
-    <header className={`flex justify-between items-center ${classes}`}>
+    <header className={`flex justify-between items-center h-9 ${classes}`}>
       <div className={`w-28`}>
         <img src={logo} alt="" />
       </div>
@@ -57,8 +57,8 @@ export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
               <>
                 <a
                   href={item.link}
-                  className={`font-semibold text-${
-                    item.isActive ? `primary font-bold underline underline-offset-2 decoration-[1.7px] ${style.isActive}` : `secondary`
+                  className={`font-semibold ${
+                    item.isActive ? `text-primary font-bold underline underline-offset-2 decoration-[1.7px] ${style.isActive}` : `text-secondary`
                   }`}
                 >
                   {item.name}

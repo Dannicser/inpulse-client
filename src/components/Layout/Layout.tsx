@@ -6,5 +6,5 @@ interface ILoyoutProps {
 }
 
 export const Layout: React.FC<ILoyoutProps> = ({ children, classes = "" }) => {
-  return <div className={`container mx-auto ${classes}`}>{children}</div>;
+  return <div className={`container ${classes}`}>{children}</div>;
 };

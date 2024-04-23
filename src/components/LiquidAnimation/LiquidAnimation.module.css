@@ -5,16 +5,17 @@
 .rectangle {
   width: 100%;
   height: 675px;
-  border: 1px solid black;
   border-radius: 45px 45px 45px 45px;
-  background-color: black;
+  /* background: linear-gradient(66deg, #e38010, #1535bf); */
+  /* backdrop-filter: blur(100px); */
 }
 
 .rectangle_bottom {
+  overflow: hidden;
   position: absolute;
   border-radius: 0px 65px 0px 0px;
-  width: 30%;
-  height: 230px;
+  width: 35%;
+  height: 280px;
   background-color: white;
 
   bottom: -60px;
@@ -24,6 +25,7 @@
 }
 
 .rectangle_top {
+  overflow: hidden;
   position: absolute;
   border-radius: 65px;
   width: 15%;
@@ -32,12 +34,12 @@
 
   bottom: 0;
   right: -50px;
-  top: -60px;
+  top: -80px;
 }
 
 .circle_left {
   position: absolute;
-  bottom: 161px;
+  bottom: 210px;
   left: -9px;
   width: 80px;
   height: 55px;
@@ -50,7 +52,7 @@
 .circle_bottom {
   position: absolute;
   bottom: -15px;
-  left: 432px;
+  left: 34%;
   width: 80px;
   height: 65px;
   margin: -20px 0 20px 0;
@@ -61,19 +63,19 @@
 
 .circle_top {
   position: absolute;
-  top: 25px;
-  right: 163px;
+  top: 23px;
+  right: 11%;
   width: 80px;
-  height: 66px;
+  height: 65px;
   margin: -20px 0 20px 0;
   transform: rotate(235deg);
   border-radius: 50%;
-  box-shadow: 5px 30px 0 0 #ffffff;
+  box-shadow: 6px 30px 0 0 #ffffff;
 }
 
 .circle_right {
   position: absolute;
-  top: 214px;
+  top: 196px;
   right: -5px;
   width: 80px;
   height: 65px;
@@ -81,4 +83,34 @@
   transform: rotate(235deg);
   border-radius: 50%;
   box-shadow: 6px 30px 0 0 #ffffff;
+}
+
+.capsule {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 45px;
+  top: 40px;
+  left: 65px;
+  border: 1px solid black;
+}
+
+.circle_explore {
+  border: 1px solid #fe1b1c;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  border-radius: 50%;
+}
+
+.circle_explore_text {
+  position: absolute;
+  right: 45px;
+  bottom: 60px;
+  transform: rotate(-45deg);
+}
+
+.title_container {
+  position: absolute;
+  bottom: 5px;
 }
