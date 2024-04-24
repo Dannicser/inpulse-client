@@ -27,7 +27,7 @@ const menu: IMenu[] = [
     id: 2,
   },
   {
-    name: "For Whom?",
+    name: "For Who?",
     link: "#3",
     isActive: false,
     id: 3,
@@ -46,18 +46,18 @@ interface IHeaderProps {
 
 export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
   return (
-    <header className={`flex justify-between items-center h-9 ${classes}`}>
+    <header className={`${style.Header} flex justify-between items-center h-9 ${classes}`}>
       <div className={`w-28`}>
         <img src={logo} alt="" />
       </div>
-      <menu className={`container w-2/4`}>
+      <menu className={`container xl:w-[25.5rem] lg:w-[23.5rem] md:w-[20.5rem]`}>
         <div className={`flex justify-between max-md:hidden`}>
           {menu.map((item) => {
             return (
               <>
                 <a
                   href={item.link}
-                  className={`font-semibold ${
+                  className={`font-semibold text-base ${
                     item.isActive ? `text-primary font-bold underline underline-offset-2 decoration-[1.7px] ${style.isActive}` : `text-secondary`
                   }`}
                 >
@@ -70,9 +70,9 @@ export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
       </menu>
       <div className={`flex items-center`}>
         <Switcher />
-        <div className={`md:hidden ml-10`}>
-          <div className={`w-7 h-1 bg-black mb-1`}></div>
-          <div className={`w-4 h-1 bg-black ml-auto`}></div>
+        <div className={`md:hidden max-md:ml-10 z-10`}>
+          <div className={`w-7 h-1 max-md:bg-black mb-1`}></div>
+          <div className={`w-5 h-1 max-md:bg-black ml-auto`}></div>
         </div>
       </div>
     </header>

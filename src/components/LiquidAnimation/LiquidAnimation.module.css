@@ -14,10 +14,7 @@
   overflow: hidden;
   position: absolute;
   border-radius: 0px 65px 0px 0px;
-  width: 35%;
-  height: 280px;
   background-color: white;
-
   bottom: -60px;
   left: -5px;
   right: 1;
@@ -27,9 +24,7 @@
 .rectangle_top {
   overflow: hidden;
   position: absolute;
-  border-radius: 65px;
-  width: 15%;
-  height: 250px;
+  /* border-radius: 65px; */
   background-color: white;
 
   bottom: 0;
@@ -39,7 +34,7 @@
 
 .circle_left {
   position: absolute;
-  bottom: 210px;
+  /* bottom: 210px; */
   left: -9px;
   width: 80px;
   height: 55px;
@@ -52,7 +47,6 @@
 .circle_bottom {
   position: absolute;
   bottom: -15px;
-  left: 34%;
   width: 80px;
   height: 65px;
   margin: -20px 0 20px 0;
@@ -64,7 +58,6 @@
 .circle_top {
   position: absolute;
   top: 23px;
-  right: 11%;
   width: 80px;
   height: 65px;
   margin: -20px 0 20px 0;
@@ -75,7 +68,6 @@
 
 .circle_right {
   position: absolute;
-  top: 196px;
   right: -5px;
   width: 80px;
   height: 65px;
@@ -96,6 +88,9 @@
 }
 
 .circle_explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #fe1b1c;
   position: absolute;
   top: 10px;
@@ -104,13 +99,11 @@
 }
 
 .circle_explore_text {
-  position: absolute;
-  right: 45px;
-  bottom: 60px;
   transform: rotate(-45deg);
+  color: #fe1b1c;
 }
 
 .title_container {
   position: absolute;
-  bottom: 5px;
+  bottom: 33px;
 }

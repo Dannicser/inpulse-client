@@ -7,9 +7,11 @@ import style from "./App.module.css";
 function App() {
   return (
     <div className={style.App}>
-      <Layout classes="mx-10 mt-10">
-        <Header classes="mx-8 mb-14" />
-        <LiquidAnimation classes={"mx-6 "} />
+      <Layout classes="mt-10 xl:mx-[7.5rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[1.175rem]">
+        {/* xl:mx-10 lg:mx-10 md:mx-5 sm:mx-1 mb-14 */}
+        <Header classes="mb-14" />
+        {/* xl:mx-10 lg:mx-5 md:mx-10 sm:mx-1 */}
+        <LiquidAnimation classes="" />
       </Layout>
     </div>
   );
