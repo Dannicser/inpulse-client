@@ -5,8 +5,6 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 let containerScreens = Object.assign({}, defaultTheme.screens);
 
 delete containerScreens["2xl"];
-delete containerScreens["sm"];
-
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -16,10 +14,9 @@ module.exports = {
         secondary: "#00000099",
       },
     },
+    screens: { xs: "490px", us: "320px", ...defaultTheme.screens },
     container: {
-      screens: {
-        ...containerScreens,
-      },
+      screens: { ...containerScreens },
     },
   },
   plugins: [],
