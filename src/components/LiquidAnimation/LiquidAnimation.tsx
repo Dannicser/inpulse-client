@@ -14,18 +14,14 @@ interface ILiquidAnimationProps {
 export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) => {
   const effect = useSpring({
     loop: true,
-    config: { duration: 5000 },
+    config: { duration: 4000 },
     from: {
-      background: `linear-gradient(red, transparent),
-      linear-gradient(to top left, lime, transparent),
-      linear-gradient(to top right, blue, transparent)`,
+      background: `linear-gradient(to right, #f00, #ffa500, #ff0, #008000, #00f, #4b0082, #ee82ee)`,
     },
 
     to: [
       {
-        background: `linear-gradient(red, transparent),
-		linear-gradient(to top right, blue, transparent),
-		linear-gradient(to top left, lime, transparent)`,
+        background: `linear-gradient(to left, #ee82ee, #4b0082, #f00, #ffa500, #ff0, #008000, #00f )`,
       },
     ],
   });
@@ -40,7 +36,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
         className={`${style.rectangle_bottom} us:rounded-[30px] xs:rounded-[30px] sm:rounded-[30px] md:rounded-[40px] lg:rounded-[40px] xl:rounded-tr-[50px] xl:w-[35%] xl:h-[42%] lg:w-[35%] lg:h-[42%] md:w-[39%] md:h-[42%] sm:w-[32%] sm:h-[47%] xs:w-[32%] xs:h-[47%] us:w-[53%] us:h-[31%]`}
       ></div>
       <div
-        className={`${style.rectangle_top} us:right-[-1.125rem] xs:right-[-1.125rem] sm:right-[-1.125rem] md:right-[-3.125rem] lg:right-[-3.125rem] xl:right-[-3.125rem] us:rounded-[30px] xs:rounded-[30px] sm:rounded-[30px] md:rounded-[40px] lg:rounded-[60px] xl:w-[13.2rem] xl:h-[15.625rem] lg:w-[11.5rem] lg:h-[14rem] md:w-[11rem] md:h-[13rem] sm:w-[8rem] sm:h-[13rem] xs:w-[8rem] xs:h-[13rem] us:w-[8rem] us:h-[13rem]`}
+        className={`${style.rectangle_top} us:right-[-1.125rem] xs:right-[-1.125rem] sm:right-[-1.125rem] md:right-[-3.625rem] lg:right-[-3.125rem] xl:right-[-3.125rem] us:rounded-[40px] xs:rounded-[30px] sm:rounded-[30px] md:rounded-[40px] lg:rounded-[60px] xl:w-[13.2rem] xl:h-[15.625rem] lg:w-[11.5rem] lg:h-[14rem] md:w-[11rem] md:h-[13rem] sm:w-[8rem] sm:h-[13rem] xs:w-[8rem] xs:h-[13rem] us:w-[8rem] us:h-[13rem]`}
       ></div>
       <div
         className={`${style.circle_left} xl:bottom-[13.125rem] lg:bottom-[13.125rem] md:bottom-[13.125rem] sm:bottom-[10.1rem] xs:bottom-[10.1rem] us:bottom-[10.1rem]`}

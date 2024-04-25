@@ -47,9 +47,8 @@ interface IHeaderProps {
 export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
   return (
     <header className={`${style.Header} flex justify-between items-center h-9 ${classes}`}>
-      <div className={`w-28`}>
-        <img src={logo} alt="" />
-      </div>
+      <img className={`xl:w-[5.938rem] lg:w-[5.938rem]md:w-[4.375rem] sm:w-[4.375rem] xs:w-[4.375rem] us:w-[4.375rem] us:h-12}`} src={logo} alt="" />
+
       <menu className={`container xl:w-[25.5rem] lg:w-[23.5rem] md:w-[20.5rem]`}>
         <div className={`flex justify-between max-md:hidden`}>
           {menu.map((item) => {
