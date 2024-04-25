@@ -46,7 +46,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
         className={`${style.circle_top} xl:right-[9.7rem] lg:right-[8.01rem] md:right-[7rem] sm:right-[6.5rem] xs:right-[6.5rem] us:right-[6.5rem]`}
       ></div>
       <div
-        className={`${style.circle_right}  xl:top-[12.25rem] lg:top-[10.5rem] md:top-[9.5rem] sm:top-[9.5rem] xs:top-[9.5rem] us:top-[9.5rem]`}
+        className={`${style.circle_right}  xl:top-[12.20rem] lg:top-[10.5rem] md:top-[9.5rem] sm:top-[9.5rem] xs:top-[9.5rem] us:top-[9.5rem]`}
       ></div>
 
       <div
@@ -62,9 +62,13 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
       >
         <div className={style.circle_explore_text}>Explore</div>
       </div>
-      <div className={`${style.title_container} bottom-[1rem]`}>
-        <div className={`lg:text-lg md:text-lg sm:text-sm xs:text-xs us:text-xs mb-1 font-medium`}>IN PULSE IS THE PLACE</div>
-        <div className={`${style.title_text} xl:text-5xl lg:text-4xl md:text-3xl sm:text-4xl xs:text-3xl us:text-3xl font-black`}>
+      <div className={`${style.title_container} bottom-[1.5rem]`}>
+        <div className={`${style.sub_title_text} lg:text-lg md:text-lg sm:text-sm xs:text-xs us:text-sm mb-2.5 font-medium`}>
+          IN PULSE IS THE PLACE
+        </div>
+        <div
+          className={`${style.title_text} xl:text-5xl lg:text-4xl md:text-3xl sm:text-4xl xs:text-3xl us:text-3xl font-black xl:leading-11 lg:leading-9 md:leading-8 sm:leading-8 xs:leading-8 us:leading-7`}
+        >
           WHERE <br /> <span className={`text-[#E11800]`}>DIGITAL ART </span>
           <br /> COMES TO LIFE
         </div>
