@@ -1,0 +1,15 @@
+.Divider {
+  height: 43px;
+  border-radius: 25px 25px 10px 10px;
+  background-color: rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+
+.divider_text {
+  margin-left: 9.375rem;
+  margin-top: 2.938rem;
+  font-size: 27px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  font-style: italic;
+}

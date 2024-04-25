@@ -19,11 +19,11 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
       background: `linear-gradient(to right, #f00, #ffa500, #ff0, #008000, #00f, #4b0082, #ee82ee)`,
     },
 
-    to: [
-      {
-        background: `linear-gradient(to left, #ee82ee, #4b0082, #f00, #ffa500, #ff0, #008000, #00f )`,
-      },
-    ],
+    // to: [
+    //   {
+    //     background: `linear-gradient(to left, #ee82ee, #4b0082, #f00, #ffa500, #ff0, #008000, #00f )`,
+    //   },
+    // ],
   });
 
   return (
