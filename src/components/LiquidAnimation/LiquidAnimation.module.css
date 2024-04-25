@@ -79,7 +79,7 @@
 
 .mobile_circle_middle {
   position: absolute;
-  bottom: 85px;
+  /* bottom: 85px; */
   width: 80px;
   height: 65px;
   margin: -20px 0 20px 0;
@@ -129,10 +129,39 @@
   position: absolute;
 }
 
-.logo {
+.logo_container {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  /* margin-right: 60px;
-  margin-bottom: 60px; */
+}
+
+@media (max-width: 490px) {
+  .logo_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .capsule {
+  }
+}
+
+@media (max-width: 370px) {
+  .title_text {
+    font-size: 1.8rem;
+    line-height: 35px;
+  }
+
+  .promo {
+    width: 15rem;
+  }
+
+  .mobile_circle_middle {
+    bottom: 11%;
+    left: 49%;
+  }
+}
+
+@media (max-width: 350px) {
+  .title_text {
+    font-size: 1.6rem;
+    line-height: 27px;
+  }
 }
