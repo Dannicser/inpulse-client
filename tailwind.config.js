@@ -14,7 +14,7 @@ module.exports = {
         secondary: "#00000099",
       },
     },
-    screens: { xs: "490px", us: "320px", ...defaultTheme.screens },
+    screens: { xs: "490px", us: "0px", ...defaultTheme.screens },
     container: {
       screens: { ...containerScreens },
     },

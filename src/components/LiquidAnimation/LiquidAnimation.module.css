@@ -140,6 +140,8 @@
     justify-content: center;
   }
   .capsule {
+    width: 48%;
+    left: 12%;
   }
 }
 
@@ -157,11 +159,19 @@
     bottom: 11%;
     left: 49%;
   }
+
+  .capsule {
+    left: 9%;
+  }
 }
 
 @media (max-width: 350px) {
   .title_text {
     font-size: 1.6rem;
     line-height: 27px;
+  }
+
+  .capsule {
+    left: 6%;
   }
 }

@@ -74,7 +74,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
         </div>
       </div>
       <div
-        className={`${style.capsule} xl:top-[2.5rem] lg:top-[2.5rem] md:top-[2.5rem] sm:top-[1.5rem] xs:top-[1.5rem] us:top-[1.5rem] xl:w-52 xl:h-[23rem] lg:w-52 lg:h-[23rem] md:w-52 md:h-[23rem] sm:w-[10rem] sm:h-[16.875rem] xs:w-[10rem] xs:h-[16.875rem] us:w-[10.75rem] us:h-[20rem]`}
+        className={`${style.capsule} xl:top-[2.5rem] lg:top-[2.5rem] md:top-[2.5rem] sm:top-[1.5rem] xs:top-[1.5rem] us:top-[1.5rem] xl:w-52 xl:h-[23rem] lg:w-52 lg:h-[23rem] md:w-52 md:h-[23rem] sm:w-[10rem] sm:h-[16.875rem] xs:w-[10rem] xs:h-[16.875rem] us:w-[9.875rem] us:h-[16.875rem]`}
       >
         <img className={`w-[4.250rem]`} src={logo} alt="" />
       </div>
