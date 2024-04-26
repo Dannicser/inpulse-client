@@ -54,3 +54,9 @@
   user-select: none;
   cursor: pointer;
 }
+
+@media (max-width: 767px) {
+  .slide_descr {
+    width: 52%;
+  }
+}

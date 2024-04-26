@@ -8,6 +8,8 @@ import photo_two from "./assets/two.png";
 import photo_three from "./assets/three.png";
 import star from "./assets/icons/star.svg";
 
+const SCREEN_WIDTH: number = window.innerWidth;
+
 const content: IContent[] = [
   {
     title: "JON DENNISTON",
@@ -18,9 +20,14 @@ const content: IContent[] = [
   },
   { title: "DAN JESNE", img: photo_two, date: "12 aug 2024", descr: "some information", id: 2 },
   { title: "RICHE HOK", img: photo_three, date: "11 aug 2024", descr: "some information", id: 3 },
+  { title: "JON DENNISTON", img: photo_one, date: "13 aug 2024", descr: "some information some information some", id: 4 },
+  { title: "ELON DAL", img: photo_two, date: "12 aug 2024", descr: "some information", id: 5 },
+  { title: "ERIC LASODA", img: photo_three, date: "11 aug 2024", descr: "some information", id: 6 },
+  { title: "DAN JESNE!", img: photo_two, date: "12 aug 2024", descr: "some information", id: 2 },
+  // { title: "RICHE HOK", img: photo_three, date: "11 aug 2024", descr: "some information", id: 3 },
   // { title: "JON DENNISTON", img: photo_one, date: "13 aug 2024", descr: "some information some information some", id: 4 },
-  // { title: "ELON DAL", img: photo_two, date: "12 aug 2024", descr: "some information", id: 5 },
-  // { title: "ERIC LASODA", img: photo_three, date: "11 aug 2024", descr: "some information", id: 6 },
+  // { title: "ELON DAL!", img: photo_two, date: "12 aug 2024", descr: "some information", id: 5 },
+  // { title: "ERIC LASODA!", img: photo_three, date: "11 aug 2024", descr: "some information", id: 6 },
 ];
 
 interface IContent {
@@ -37,6 +44,7 @@ interface ISlider {
 
 export const Slider: React.FC<ISlider> = ({ classes = "" }) => {
   const [position, setPosition] = useState(0);
+  const [index, setIndex] = useState(1);
 
   const effect = useSpring({
     from: {
@@ -49,12 +57,27 @@ export const Slider: React.FC<ISlider> = ({ classes = "" }) => {
 
   useEffect(() => {
     effect.transform.start({
-      to: { transform: `translateX(-${position}%)` },
+      to: { transform: `translateX(-${position}px)` },
     });
+
+    if (position * content.length === index * position) {
+      setPosition(0);
+      setIndex(1);
+    }
   }, [effect.transform, position]);
 
   function onMove() {
-    setPosition((prev) => prev + 5);
+    setIndex((prev) => prev + 1);
+
+    if (SCREEN_WIDTH >= 1024) {
+      return setPosition((prev) => prev + 365);
+    }
+
+    if (SCREEN_WIDTH >= 768) {
+      return setPosition((prev) => prev + 353);
+    } else {
+      return setPosition((prev) => prev + 340);
+    }
   }
 
   return (
@@ -88,8 +111,8 @@ const Slide: React.FC<IContent> = ({ title, img, date, descr, id }) => {
           <div className={`mb-3 flex justify-center`}>
             <img className={`block`} src={img} alt="" />
           </div>
-          <p className={`text-[#999999]`}>{date}</p>
-          <p className={`${style.slide_descr} text-wrap text-stable leading-5 text-[#999999]`}>{descr}</p>
+          <p className={`text-[#999999] text-wrap leading-5`}>{date}</p>
+          <p className={`${style.slide_descr} text-[#999999] text-wrap leading-5`}>{descr}</p>
         </div>
       </div>
       <div className={style.star}>
