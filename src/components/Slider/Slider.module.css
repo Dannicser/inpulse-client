@@ -51,6 +51,6 @@
   border-radius: 50%;
   background-color: #e11800;
   bottom: 36%;
-  /* right: 23%; */
+  user-select: none;
   cursor: pointer;
 }

@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/pulse/static/css/main.40a23c7f.css",
-    "main.js": "/pulse/static/js/main.c373e4b6.js",
+    "main.css": "/pulse/static/css/main.b7e1abbb.css",
+    "main.js": "/pulse/static/js/main.066248c5.js",
+    "static/media/two.png": "/pulse/static/media/two.295ecf57c2b591c15995.png",
+    "static/media/three.png": "/pulse/static/media/three.1071273d4c334c19d556.png",
+    "static/media/one.png": "/pulse/static/media/one.0e5fcf58b5f0530180f3.png",
     "static/media/logo.svg": "/pulse/static/media/logo.26ee9609417b2483c7dfcd92241637a1.svg",
     "static/media/promo.svg": "/pulse/static/media/promo.3b978018c83e07c4ed5242d300468d2a.svg",
     "index.html": "/pulse/index.html",
-    "main.40a23c7f.css.map": "/pulse/static/css/main.40a23c7f.css.map",
-    "main.c373e4b6.js.map": "/pulse/static/js/main.c373e4b6.js.map"
+    "static/media/star.svg": "/pulse/static/media/star.aab246aba3c4d172479e17c0853bdc87.svg",
+    "main.b7e1abbb.css.map": "/pulse/static/css/main.b7e1abbb.css.map",
+    "main.066248c5.js.map": "/pulse/static/js/main.066248c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.40a23c7f.css",
-    "static/js/main.c373e4b6.js"
+    "static/css/main.b7e1abbb.css",
+    "static/js/main.066248c5.js"
   ]
 }

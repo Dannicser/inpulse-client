@@ -59,12 +59,12 @@ export const Slider: React.FC<ISlider> = ({ classes = "" }) => {
 
   return (
     <div className={`${style.Slider_wrapper}`}>
-      <animated.div style={{ ...effect }} className={`${style.Slider} h-[436px] ${classes}`}>
+      <animated.div style={{ ...effect }} className={`${style.Slider} h-[436px] max-md:h-[24.375rem] max-sm:h-[26.375rem] ${classes}`}>
         {content.map(({ img, title, descr, date, id }) => {
           return <Slide id={id} img={img} title={title} descr={descr} date={date} />;
         })}
       </animated.div>
-      <animated.div style={{ ...effect }} className={`${style.Slider} h-[436px] ${classes}`}>
+      <animated.div style={{ ...effect }} className={`${style.Slider} h-[436px] max-md:h-[24.375rem] max-sm:h-[26.375rem] ${classes}`}>
         {content.map(({ img, title, descr, date, id }) => {
           return <Slide id={id} img={img} title={title} descr={descr} date={date} />;
         })}
@@ -81,7 +81,7 @@ export const Slider: React.FC<ISlider> = ({ classes = "" }) => {
 
 const Slide: React.FC<IContent> = ({ title, img, date, descr, id }) => {
   return (
-    <div key={id} className={`${style.Slide} lg:w-[22.125rem] md:w-[22.125rem] sm:w-[20rem] us:w-[20rem]`}>
+    <div key={id} className={`${style.Slide} lg:w-[22.875rem] md:w-[22.125rem] sm:w-[21.313rem] us:w-[21.313rem]`}>
       <div className={`${style.slide_container}`}>
         <div className={`text-center`}>
           <div className={`text-lg font-medium mb-3`}>{title}</div>
