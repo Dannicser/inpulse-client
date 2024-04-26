@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useSpring, animated } from "@react-spring/web";
 
 import style from "./Slider.module.css";
 
@@ -6,7 +7,6 @@ import photo_one from "./assets/one.png";
 import photo_two from "./assets/two.png";
 import photo_three from "./assets/three.png";
 import star from "./assets/icons/star.svg";
-import { useSpring } from "@react-spring/web";
 
 const content: IContent[] = [
   {
@@ -34,25 +34,42 @@ interface ISlider {
 }
 
 export const Slider: React.FC<ISlider> = ({ classes = "" }) => {
+  const [position, setPosition] = useState(0);
+
   const effect = useSpring({
-    loop: true,
     from: {
-      background: `linear-gradient(to right, #f00, #ffa500, #ff0, #008000, #00f, #4b0082, #ee82ee)`,
+      transform: `${0}%`,
     },
   });
+
+  function onMove() {
+    effect.transform.start({
+      to: { transform: `translateX(-${position}%)` },
+    });
+
+    setPosition((prev) => prev + 30);
+  }
+
   return (
-    <div className={`${style.Slider} h-[436px]  ${classes}`}>
-      {content.map(({ img, title, descr, date }) => {
-        return <Slide img={img} title={title} descr={descr} date={date} />;
-      })}
-      <div className={`${style.switcher} w-[5.688rem] h-[5.688rem] bg-black`}>Drag</div>
+    <div className={`${style.Slider_wrapper}`}>
+      <animated.div style={{ ...effect }} className={`${style.Slider} h-[436px] ${classes}`}>
+        {content.map(({ img, title, descr, date }) => {
+          return <Slide img={img} title={title} descr={descr} date={date} />;
+        })}
+      </animated.div>
+      <div
+        onClick={onMove}
+        className={`${style.switcher} md:w-[5.688rem] md:h-[5.688rem] sm:w-[4.938rem] sm:h-[4.938rem] sm:w-[4.938rem] xs:w-[4.938rem] xs:h-[4.938rem] us:w-[5.688rem] us:h-[5.688rem] bg-black lg:right-[23%] md:right-[15%] sm:right-[8%] xs:right-[8%] us:right-[8%]`}
+      >
+        Next
+      </div>
     </div>
   );
 };
 
 const Slide: React.FC<IContent> = ({ title, img, date, descr }) => {
   return (
-    <div className={`${style.Slide} lg:w-[22.125rem]`}>
+    <div className={`${style.Slide} lg:w-[22.125rem] md:w-[22.125rem] sm:w-[20rem] us:w-[20rem]`}>
       <div className={`${style.slide_container}`}>
         <div className={`text-center`}>
           <div className={`text-lg font-medium mb-3`}>{title}</div>
