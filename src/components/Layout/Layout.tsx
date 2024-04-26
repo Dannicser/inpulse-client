@@ -8,7 +8,7 @@ interface ILoyoutProps {
 export const Layout: React.FC<ILoyoutProps> = ({ children, classes = "" }) => {
   return (
     <div className={`${classes} flex justify-center`}>
-      <div className={`w-[1440px]`}>{children}</div>
+      <div className={`w-[1198px]`}>{children}</div>
     </div>
   );
 };

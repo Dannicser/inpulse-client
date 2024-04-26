@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
 import style from "./Slider.module.css";
@@ -14,12 +14,13 @@ const content: IContent[] = [
     img: photo_one,
     date: "13 aug 2024",
     descr: "some information some information ",
+    id: 1,
   },
-  { title: "DAN JESNE", img: photo_two, date: "12 aug 2024", descr: "some information" },
-  { title: "RICHE HOK", img: photo_three, date: "11 aug 2024", descr: "some information" },
-  { title: "JON DENNISTON", img: photo_one, date: "13 aug 2024", descr: "some information some information some" },
-  { title: "ELON DAL", img: photo_two, date: "12 aug 2024", descr: "some information" },
-  { title: "ERIC LASODA", img: photo_three, date: "11 aug 2024", descr: "some information" },
+  { title: "DAN JESNE", img: photo_two, date: "12 aug 2024", descr: "some information", id: 2 },
+  { title: "RICHE HOK", img: photo_three, date: "11 aug 2024", descr: "some information", id: 3 },
+  // { title: "JON DENNISTON", img: photo_one, date: "13 aug 2024", descr: "some information some information some", id: 4 },
+  // { title: "ELON DAL", img: photo_two, date: "12 aug 2024", descr: "some information", id: 5 },
+  // { title: "ERIC LASODA", img: photo_three, date: "11 aug 2024", descr: "some information", id: 6 },
 ];
 
 interface IContent {
@@ -27,6 +28,7 @@ interface IContent {
   img: any;
   date: string;
   descr: string;
+  id: number;
 }
 
 interface ISlider {
@@ -39,22 +41,32 @@ export const Slider: React.FC<ISlider> = ({ classes = "" }) => {
   const effect = useSpring({
     from: {
       transform: `${0}%`,
+      config: {
+        duration: 2000,
+      },
     },
   });
 
-  function onMove() {
+  useEffect(() => {
     effect.transform.start({
       to: { transform: `translateX(-${position}%)` },
     });
+  }, [effect.transform, position]);
 
-    setPosition((prev) => prev + 30);
+  function onMove() {
+    setPosition((prev) => prev + 5);
   }
 
   return (
     <div className={`${style.Slider_wrapper}`}>
       <animated.div style={{ ...effect }} className={`${style.Slider} h-[436px] ${classes}`}>
-        {content.map(({ img, title, descr, date }) => {
-          return <Slide img={img} title={title} descr={descr} date={date} />;
+        {content.map(({ img, title, descr, date, id }) => {
+          return <Slide id={id} img={img} title={title} descr={descr} date={date} />;
+        })}
+      </animated.div>
+      <animated.div style={{ ...effect }} className={`${style.Slider} h-[436px] ${classes}`}>
+        {content.map(({ img, title, descr, date, id }) => {
+          return <Slide id={id} img={img} title={title} descr={descr} date={date} />;
         })}
       </animated.div>
       <div
@@ -67,9 +79,9 @@ export const Slider: React.FC<ISlider> = ({ classes = "" }) => {
   );
 };
 
-const Slide: React.FC<IContent> = ({ title, img, date, descr }) => {
+const Slide: React.FC<IContent> = ({ title, img, date, descr, id }) => {
   return (
-    <div className={`${style.Slide} lg:w-[22.125rem] md:w-[22.125rem] sm:w-[20rem] us:w-[20rem]`}>
+    <div key={id} className={`${style.Slide} lg:w-[22.125rem] md:w-[22.125rem] sm:w-[20rem] us:w-[20rem]`}>
       <div className={`${style.slide_container}`}>
         <div className={`text-center`}>
           <div className={`text-lg font-medium mb-3`}>{title}</div>
