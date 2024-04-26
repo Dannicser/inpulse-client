@@ -6,5 +6,9 @@ interface ILoyoutProps {
 }
 
 export const Layout: React.FC<ILoyoutProps> = ({ children, classes = "" }) => {
-  return <div className={`${classes}`}>{children}</div>;
+  return (
+    <div className={`${classes} flex justify-center`}>
+      <div className={`w-[1440px]`}>{children}</div>
+    </div>
+  );
 };
