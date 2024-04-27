@@ -16,7 +16,6 @@ export const TitleDivider: React.FC<ITitleDivider> = ({ classes = "" }) => {
         <div className={`${style.orange}`}>
           <img src={orange} alt="" />
         </div>
-
         <div className={`text-4xl font-bold`}>EXPERIENCE</div>
       </div>
     </div>

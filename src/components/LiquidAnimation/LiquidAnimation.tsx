@@ -33,7 +33,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
         className={`${style.rectangle} w-full xl:h-[42.188rem] lg:h-[42.188rem] md:h-[42.188rem] sm:h-[31.25rem] xs:h-[31.25rem] us:h-[46.875rem]`}
       ></animated.div>
       <div
-        className={`${style.rectangle_bottom} us:rounded-[30px] xs:rounded-[30px] sm:rounded-[30px] md:rounded-[40px] lg:rounded-[40px] xl:rounded-tr-[50px] xl:w-[35%] xl:h-[42%] lg:w-[35%] lg:h-[42%] md:w-[39%] md:h-[42%] sm:w-[32%] sm:h-[47%] xs:w-[32%] xs:h-[47%] us:w-[53%] us:h-[31%]`}
+        className={`${style.rectangle_bottom} us:rounded-[30px] xs:rounded-[30px] sm:rounded-[30px] md:rounded-[40px] lg:rounded-[40px] xl:rounded-tr-[50px] xl:w-[37%] xl:h-[42%] lg:w-[35%] lg:h-[42%] md:w-[39%] md:h-[42%] sm:w-[32%] sm:h-[47%] xs:w-[32%] xs:h-[47%] us:w-[53%] us:h-[31%]`}
       ></div>
       <div
         className={`${style.rectangle_top} us:right-[-1.125rem] xs:right-[-1.125rem] sm:right-[-1.125rem] md:right-[-3.625rem] lg:right-[-3.125rem] xl:right-[-3.125rem] us:rounded-[40px] xs:rounded-[30px] sm:rounded-[30px] md:rounded-[40px] lg:rounded-[60px] xl:w-[13.2rem] xl:h-[15.625rem] lg:w-[11.5rem] lg:h-[14rem] md:w-[11rem] md:h-[13rem] sm:w-[8rem] sm:h-[13rem] xs:w-[8rem] xs:h-[13rem] us:w-[8rem] us:h-[13rem]`}
@@ -41,7 +41,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
       <div
         className={`${style.circle_left} xl:bottom-[13.125rem] lg:bottom-[13.125rem] md:bottom-[13.125rem] sm:bottom-[10.1rem] xs:bottom-[10.1rem] us:bottom-[10.1rem]`}
       ></div>
-      <div className={`${style.circle_bottom} xl:left-[34%] lg:left-[34%] md:left-[37%] xs:left-[37%] us:left-[37%]`}></div>
+      <div className={`${style.circle_bottom} xl:left-[36%] lg:left-[34%] md:left-[37%] xs:left-[37%] us:left-[37%]`}></div>
       <div
         className={`${style.circle_top} xl:right-[9.7rem] lg:right-[8.01rem] md:right-[7rem] sm:right-[6.5rem] xs:right-[6.5rem] us:right-[6.5rem]`}
       ></div>
@@ -63,12 +63,8 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
         <div className={style.circle_explore_text}>Explore</div>
       </div>
       <div className={`${style.title_container} bottom-[1.5rem]`}>
-        <div className={`${style.sub_title_text} lg:text-lg md:text-lg sm:text-sm xs:text-xs us:text-sm mb-2.5 font-medium`}>
-          IN PULSE IS THE PLACE
-        </div>
-        <div
-          className={`${style.title_text} xl:text-5xl lg:text-4xl md:text-3xl sm:text-4xl xs:text-3xl us:text-3xl font-black xl:leading-11 lg:leading-9 md:leading-8 sm:leading-8 xs:leading-8 us:leading-7`}
-        >
+        <div className={`${style.sub_title_text}`}>IN PULSE IS THE PLACE</div>
+        <div className={`${style.title_text}`}>
           WHERE <br /> <span className={`text-[#E11800]`}>DIGITAL ART </span>
           <br /> COMES TO LIFE
         </div>
