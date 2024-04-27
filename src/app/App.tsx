@@ -3,6 +3,7 @@ import { Header } from "../components/Header/Header";
 import { Layout } from "../components/Layout/Layout";
 import { LiquidAnimation } from "../components/LiquidAnimation/LiquidAnimation";
 import { Slider } from "../components/Slider/Slider";
+import { TitleDivider } from "../components/TitleDivider/TitleDivider";
 
 import style from "./App.module.css";
 
@@ -15,7 +16,8 @@ function App() {
         <Divider classes="mx-[8.5rem]" />
         <div className={`text-3xl font-medium mt-[4rem]`}>Prints & Editions</div>
       </Layout>
-      <Slider classes="mt-[2rem]" />
+      <Slider classes={`mt-[2rem]`} />
+      <TitleDivider classes={`mt-[5rem]`} />
     </div>
   );
 }

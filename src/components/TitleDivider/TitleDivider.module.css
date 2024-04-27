@@ -1,0 +1,32 @@
+.TitleDividerWrapper {
+  position: relative;
+}
+
+.TitleDividerWrapper::after {
+  content: " ";
+  background: rgba(153, 153, 153, 1);
+  width: 44%;
+  height: 1px;
+  top: 70px;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.TitleDivider {
+  position: relative;
+}
+
+.decoration {
+  position: absolute;
+  top: -1px;
+
+  left: -40%;
+}
+
+.orange {
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  right: 190px;
+}
