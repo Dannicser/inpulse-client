@@ -1,5 +1,6 @@
 .TitleDividerWrapper {
   position: relative;
+  margin-top: 70px;
 }
 
 .TitleDividerWrapper::after {
@@ -29,4 +30,64 @@
   position: absolute;
   bottom: -4px;
   right: 190px;
+}
+
+@media (max-width: 960px) {
+  .decoration {
+    position: absolute;
+    top: -50px;
+    height: 40px;
+    left: 5%;
+  }
+
+  .TitleDividerWrapper {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 570px) {
+  .title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .TitleDivider {
+    width: 367px;
+  }
+
+  .orange {
+    right: 60px;
+    width: 62px;
+  }
+}
+
+@media (max-width: 480px) {
+  .decoration {
+    width: 227px;
+    height: 34px;
+  }
+
+  .title {
+    margin-top: -10px;
+    line-height: 38px;
+  }
+
+  .orange {
+    right: 60px;
+    top: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .title {
+    margin-top: -8px;
+    line-height: 36px;
+    font-size: 25px;
+    padding: 0px 10px;
+  }
+
+  .orange {
+    width: 50px;
+    right: 18%;
+  }
 }
