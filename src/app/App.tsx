@@ -5,11 +5,10 @@ import { LiquidAnimation } from "../components/LiquidAnimation/LiquidAnimation";
 import { SectionDo } from "../components/SectionDo/SectionDo";
 import { Slider } from "../components/Slider/Slider";
 import { TitleDivider } from "../components/TitleDivider/TitleDivider";
-import {SectionBenefits} from "../components/SectionBenefits/SectionBenefits";
-import {Footer} from "../components/Footer/Footer";
+import { SectionBenefits } from "../components/SectionBenefits/SectionBenefits";
+import { Footer } from "../components/Footer/Footer";
 
 import style from "./App.module.css";
-import {Switcher} from "../components/Switcher/Switcher";
 
 function App() {
   return (

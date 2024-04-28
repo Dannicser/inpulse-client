@@ -204,3 +204,9 @@
     padding-inline: 1.875rem;
   }
 }
+
+@media (max-width: 380px) {
+  .hashtags_item {
+    padding: 2px;
+  }
+}

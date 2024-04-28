@@ -255,6 +255,14 @@
   .heart {
     transform: scale(0.8);
   }
+
+  .heart_heart {
+    left: 100px;
+  }
+  .heart_text {
+    left: 1px;
+  }
+
   .form_button {
     width: 90px;
   }
@@ -262,6 +270,45 @@
     width: 100px;
   }
   .email_content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .heart_heart {
+    width: 200px;
+    left: 130px;
+  }
+
+  .social {
+    margin-left: 20px;
+  }
+
+  .form {
+    margin-left: 20px;
+    width: 85%;
+  }
+
+  .email {
+    margin-left: 20px;
+  }
+
+  .footer_bottom_grid {
+    margin: 0px 20px;
+  }
+
+  .heart_text {
+    top: 58px;
+    left: 50px;
+    font-size: 27px;
+    line-height: 36px;
+  }
+
+  .input {
+    font-size: 10px;
+  }
+
+  .copyright {
     font-size: 14px;
   }
 }
