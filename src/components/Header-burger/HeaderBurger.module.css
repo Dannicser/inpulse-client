@@ -1,0 +1,35 @@
+
+
+.burger_inner{
+    height: 100vh;
+    display: none;
+
+}
+
+.burger_inner_active{
+    display: block ;
+}
+
+.active{
+    color: #FE1B1C;
+    text-decoration: underline #fe1b1c 3px;
+}
+
+.list{
+    margin: auto;
+    margin-top: 70px;
+    height: 380px;
+    width: 98%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social_list{
+    margin-top: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

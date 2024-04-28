@@ -7,6 +7,7 @@ import { Slider } from "../components/Slider/Slider";
 import { TitleDivider } from "../components/TitleDivider/TitleDivider";
 
 import style from "./App.module.css";
+import {Switcher} from "../components/Switcher/Switcher";
 
 function App() {
   return (
