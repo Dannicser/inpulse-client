@@ -1,8 +1,6 @@
 .burger_inner {
   height: 100vh;
   display: none;
-
-  position: relative;
 }
 
 .burger_inner_active {
@@ -32,8 +30,9 @@
   align-items: center;
   gap: 10px;
 
-  height: 100%;
-  width: 100%;
+  margin-left: 5px;
+  top: 85%;
+  width: 85%;
   left: auto;
 }
 
@@ -47,6 +46,8 @@
 @media (max-width: 480px) {
   .social_list {
     justify-content: center;
+    margin-left: 0px;
+    top: 85%;
   }
 }
 
