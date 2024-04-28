@@ -1,0 +1,267 @@
+.footer_top {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer_top_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  column-gap: 80px;
+}
+
+.heart {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 340px;
+  position: relative;
+}
+
+.heart_text {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  font-weight: 500;
+  font-size: 53px;
+  line-height: 55px;
+}
+
+.heart_heart {
+  position: absolute;
+  top: 0;
+  left: 165px;
+  border-radius: 50%;
+}
+
+.heart_pulse {
+  position: absolute;
+  top: 200px;
+  left: 190px;
+}
+
+.social {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.social_logo {
+  width: 72px;
+}
+
+.social_text {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.social_media {
+  display: flex;
+  gap: 18px;
+}
+
+.social_media img {
+  width: 25px;
+}
+
+.email {
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  margin-block: 24px;
+}
+
+.email_img {
+  width: 132px;
+  height: auto;
+}
+
+.email_content {
+  font-family: Involve, Unbounded, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.email_content > a {
+  color: #e43d2b;
+  text-decoration: underline #e43d2b;
+}
+
+.form {
+  grid-column: 2;
+  grid-row: 3;
+  margin-block: 24px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 9px;
+  padding-inline: 32px 9px;
+  gap: 10px;
+  border-radius: 168px;
+  border: 1px solid #c5cfe3;
+}
+
+.form_button {
+  width: 180px;
+  padding-block: 10px;
+  border-radius: 50px;
+  font-family: Involve, Unbounded, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #e43d2b;
+}
+
+.input {
+  width: auto;
+  height: 52px;
+  background-color: transparent;
+  font-family: Gilroy, Unbounded, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #7886a1;
+}
+
+.footer_bottom_grid {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 1fr 1fr;
+  row-gap: 40px;
+}
+
+.footer_bottom_logo {
+  width: 72px;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  margin-right: auto;
+}
+
+.nav {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: right;
+  display: flex;
+  gap: 32px;
+}
+
+.nav > a {
+  font-family: Involve, Unbounded, sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.copyright {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  justify-self: center;
+  font-family: Involve, Unbounded, sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1200px) {
+  .footer_top {
+    background-size: 220%;
+    background-position: right 300px;
+  }
+  .footer_top_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+  .heart {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .social {
+    grid-column: 1;
+    grid-row: 2;
+    margin-inline: 70px;
+  }
+  .email {
+    grid-column: 1;
+    grid-row: 4;
+    margin-inline: 70px;
+  }
+  .form {
+    grid-column: 1;
+    grid-row: 3;
+    margin-inline: 70px;
+  }
+}
+
+@media (max-width: 625px) {
+  .heart,
+  .social,
+  .email,
+  .form {
+    margin-inline: 0;
+  }
+  .heart {
+    height: 224px;
+  }
+  .heart_text {
+    top: 92px;
+    left: 20px;
+    font-size: 35px;
+    line-height: 36px;
+  }
+  .heart_heart {
+    left: 130px;
+    width: 287px;
+  }
+  .heart_pulse {
+    width: 210px;
+    top: 132px;
+    left: 150px;
+  }
+  .social_media img {
+    width: 33px;
+  }
+  .form {
+    width: 100%;
+  }
+  .form_button {
+    width: 140px;
+  }
+  .input {
+    font-size: 14px;
+  }
+
+  .footer_bottom_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 490px) {
+  .nav {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 440px) {
+  .heart {
+    transform: scale(0.8);
+  }
+  .form_button {
+    width: 90px;
+  }
+  .email_img {
+    width: 100px;
+  }
+  .email_content {
+    font-size: 14px;
+  }
+}
