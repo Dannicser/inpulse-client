@@ -2,10 +2,11 @@
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    /*height: 600px;*/
+    height: 600px;
+    margin-top: 60px;
 }
 .experience_item{
-    /*height: 350px;*/
+    height: 350px;
     padding: 50px;
     width: 30%;
     border-radius: 50px;
@@ -35,28 +36,27 @@
 @media all and (max-width: 430px) {
     .experience_container{
         display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-content:center ;
+        width: 80%;
+        margin: auto;
+        height: auto;
     }
     .experience_item{
         width: 70%;
         margin: auto;
+        height: auto;
     }
 }
 
 @media (min-width: 431px) and (max-width: 730px) {
     .experience_container{
         display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-content:center ;
+        height: auto;
     }
     .experience_item{
         width: 40%;
         margin: auto;
         padding: 100px;
-
+        height: auto;
     }
 }
 
