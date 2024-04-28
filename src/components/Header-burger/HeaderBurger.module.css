@@ -43,6 +43,25 @@
   color: rgba(30, 36, 45, 0.6);
 }
 
+@media (max-height: 620px) {
+  .list {
+    /* flex-direction: row; */
+    height: 50%;
+  }
+}
+
+@media (max-height: 450px) {
+  .list {
+    flex-direction: row;
+    height: 30%;
+  }
+  .social_list {
+    justify-content: center;
+    margin-left: 0px;
+    top: 75%;
+  }
+}
+
 @media (max-width: 480px) {
   .social_list {
     justify-content: center;
