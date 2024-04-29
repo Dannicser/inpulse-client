@@ -51,16 +51,28 @@
   grid-area: pictures;
   margin: 60px 0;
   display: grid;
-  grid-template-areas: "one two three four five";
-  grid-template-columns: 2fr 1.5fr 1.5fr 0.8fr 1fr;
-  gap: 20px;
+  /*grid-template-areas: "one two three four five";*/
+  grid-template-areas:
+    "one . three . ."
+    "one two three four five"
+    "one two three four five"
+    "one two three four five"
+    ". two . four five";
+  /*grid-template-columns: 2fr 1.5fr 1.5fr 0.8fr 1fr;*/
+  grid-template-columns: 325px 175px 260px 185px 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  overflow-x: auto;
+  gap: 63px;
 }
+
+
 
 .card:nth-child(1) {
   grid-area: one;
 }
 .card:nth-child(2) {
   grid-area: two;
+  margin-bottom: 20px;
 }
 .card:nth-child(3) {
   grid-area: three;
