@@ -5,11 +5,11 @@ import { LiquidAnimation } from "../components/LiquidAnimation/LiquidAnimation";
 import { SectionDo } from "../components/SectionDo/SectionDo";
 import { Slider } from "../components/Slider/Slider";
 import { TitleDivider } from "../components/TitleDivider/TitleDivider";
+import { SectionBenefits } from "../components/SectionBenefits/SectionBenefits";
+import { Footer } from "../components/Footer/Footer";
 
 import style from "./App.module.css";
-import { Switcher } from "../components/Switcher/Switcher";
-import { SectionExperience } from "../components/SectionExperience/SectionExperience";
-
+  
 function App() {
   return (
     <div className={`${style.App}`}>
@@ -27,6 +27,10 @@ function App() {
       <Layout classes={`max-lg:hidden xl:mx-[7.5rem] lg:mx-[5.5rem] md:mx-[3.5rem] mt-10`}>
         <SectionDo />
       </Layout>
+      <Layout classes={`xl:mx-[7.5rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[1rem] xs:mx-[1rem] us:mx-[1.875rem] mt-20`}>
+        <SectionBenefits />
+      </Layout>
+      <Footer />
     </div>
   );
 }
