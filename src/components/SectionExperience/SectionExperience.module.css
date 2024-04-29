@@ -1,0 +1,121 @@
+.experience_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.experience_item {
+  width: 224px;
+  height: 255px;
+  border-radius: 26px;
+  box-sizing: content-box;
+  padding: 54px;
+
+  box-shadow: 0px 21px 73px -36px rgba(0, 0, 0, 0.63);
+}
+
+.experience_item_description {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 300;
+}
+
+.experience_item_name {
+  padding: 25px 0;
+  font-weight: 400;
+}
+
+.arrow_container {
+  width: 84px;
+  height: 38px;
+  border: 0.8px solid rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+  border-radius: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience_item_arrow {
+  max-width: 99%;
+}
+
+.experience_item:nth-child(2) {
+  margin-top: 60px;
+  box-shadow: none;
+}
+.experience_item:nth-child(3) {
+  margin-top: 90px;
+  box-shadow: none;
+}
+
+@media (max-width: 1100px) {
+  .experience_item {
+    width: 220px;
+    height: 255px;
+    padding: 40px;
+  }
+  .experience_container {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 960px) {
+  .experience_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .experience_item {
+    width: 223px;
+    height: 271px;
+    padding: 47px 112px;
+  }
+
+  .experience_item:nth-child(2) {
+    margin-top: 20px;
+  }
+  .experience_item:nth-child(3) {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .experience_container {
+    padding: 20px;
+  }
+  .experience_item {
+    width: 241px;
+    height: 267px;
+    padding: 47px 70px;
+  }
+
+  .experience_item:nth-child(2) {
+    box-shadow: 0px 21px 73px -36px rgba(0, 0, 0, 0.63);
+    margin-top: 30px;
+  }
+  .experience_item:nth-child(3) {
+    box-shadow: 0px 21px 73px -36px rgba(0, 0, 0, 0.63);
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .experience_item {
+    width: 223px;
+    height: 267px;
+    padding: 36px 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .experience_item {
+    width: 223px;
+    height: 277px;
+    padding: 25px 36px;
+  }
+}
+
+.grey {
+  color: #a0a5ac;
+}
