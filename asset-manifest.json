@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pulse/static/css/main.0e8927a0.css",
-    "main.js": "/pulse/static/js/main.92960073.js",
+    "main.css": "/pulse/static/css/main.7b405b95.css",
+    "main.js": "/pulse/static/js/main.8f72ff25.js",
     "static/media/three.png": "/pulse/static/media/three.fe74d16e9e0f0d684fe3.png",
     "static/media/one.png": "/pulse/static/media/one.1086c3b5f4a98c9e37c3.png",
     "static/media/vector.png": "/pulse/static/media/vector.2816a948a050932359fa.png",
@@ -20,11 +20,11 @@
     "static/media/telegram.svg": "/pulse/static/media/telegram.f8edd5c6bddcdac357742ddd38a7c214.svg",
     "static/media/experience-icon-1.svg": "/pulse/static/media/experience-icon-1.23ba7e009c2df2feae5fcfccedff89bb.svg",
     "index.html": "/pulse/index.html",
-    "main.0e8927a0.css.map": "/pulse/static/css/main.0e8927a0.css.map",
-    "main.92960073.js.map": "/pulse/static/js/main.92960073.js.map"
+    "main.7b405b95.css.map": "/pulse/static/css/main.7b405b95.css.map",
+    "main.8f72ff25.js.map": "/pulse/static/js/main.8f72ff25.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e8927a0.css",
-    "static/js/main.92960073.js"
+    "static/css/main.7b405b95.css",
+    "static/js/main.8f72ff25.js"
   ]
 }
