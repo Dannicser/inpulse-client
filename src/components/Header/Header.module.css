@@ -17,6 +17,11 @@
   height: 5px;
   border-radius: 60%;
 }
-.base_font{
-  font-family:"Arial" ;
+.base_font {
+  font-family: "Arial";
+}
+
+.cross {
+  max-width: 28px;
+  height: 20px;
 }

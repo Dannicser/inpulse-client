@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { Switcher } from "../Switcher/Switcher";
 
-import style from "./Header.module.css";
+import { HeaderBurger } from "../Header-burger/HeaderBurger";
 
 import logo from "./assets/logo.svg";
-import { HeaderBurger } from "../Header-burger/HeaderBurger";
+import cross from "./assets/cross.svg";
+
+import style from "./Header.module.css";
 
 interface IMenu {
   name: string;
@@ -99,9 +101,18 @@ export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
         </nav>
         <div className={`flex items-center`}>
           <Switcher />
+
           <div className={`md:hidden max-md:ml-10 z-10`} onClick={() => setBurgerActive(!burgerActive)}>
-            <div className={`w-7 h-1 max-md:bg-black mb-1`}></div>
-            <div className={`w-5 h-1 max-md:bg-black ml-auto`}></div>
+            {!burgerActive ? (
+              <>
+                <div className={`w-7 h-1 max-md:bg-black mb-1`}></div>
+                <div className={`w-5 h-1 max-md:bg-black ml-auto`}></div>
+              </>
+            ) : (
+              <div className={`w-7 h-5`}>
+                <img className={`${style.cross}`} src={cross} alt="" />
+              </div>
+            )}{" "}
           </div>
         </div>
       </header>
