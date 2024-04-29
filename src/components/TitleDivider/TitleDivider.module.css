@@ -3,7 +3,7 @@
   margin-top: 70px;
 }
 
-.TitleDividerWrapper::after {
+/* .TitleDividerWrapper::after {
   content: " ";
   background: rgba(153, 153, 153, 1);
   width: 44%;
@@ -12,7 +12,7 @@
   position: absolute;
   right: 0;
   z-index: -1;
-}
+} */
 
 .TitleDivider {
   position: relative;
@@ -58,6 +58,10 @@
   .orange {
     right: 60px;
     width: 62px;
+  }
+
+  .TitleDividerWrapper::after {
+    top: 50px;
   }
 }
 

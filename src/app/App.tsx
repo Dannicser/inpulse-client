@@ -1,4 +1,3 @@
-import { Divider } from "../components/Divider/Divider";
 import { Header } from "../components/Header/Header";
 import { Layout } from "../components/Layout/Layout";
 import { LiquidAnimation } from "../components/LiquidAnimation/LiquidAnimation";
@@ -8,8 +7,10 @@ import { TitleDivider } from "../components/TitleDivider/TitleDivider";
 import { SectionBenefits } from "../components/SectionBenefits/SectionBenefits";
 import { Footer } from "../components/Footer/Footer";
 
+import { SectionExperience } from "../components/SectionExperience/SectionExperience";
+
 import style from "./App.module.css";
-  
+
 function App() {
   return (
     <div className={`${style.App}`}>

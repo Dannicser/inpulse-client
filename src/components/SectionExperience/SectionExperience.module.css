@@ -30,11 +30,11 @@
   width: 84px;
   height: 38px;
   border: 0.8px solid rgba(0, 0, 0, 0.1);
-  margin-top: 35px;
   border-radius: 53px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .experience_item_arrow {
@@ -100,7 +100,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .experience_item {
     width: 223px;
     height: 267px;
