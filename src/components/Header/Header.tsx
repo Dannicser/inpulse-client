@@ -70,7 +70,7 @@ export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
                 <>
                   <a
                     href={item.link}
-                    className={`font-semibold text-base ${
+                    className={`font-semibold text-base ${style.base_font} ${
                       item.isActive ? `text-primary font-bold underline underline-offset-2 decoration-[1.7px] ${style.isActive}` : `text-secondary`
                     }`}
                   >
