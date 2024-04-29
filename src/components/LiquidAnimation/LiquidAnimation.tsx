@@ -57,7 +57,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
         <div className={style.circle_explore_text}>Explore</div>
       </div>
       <div className={`${style.title_container} bottom-[1.5rem]`}>
-        <div className={`${style.sub_title_text}`}>IN PULSE IS THE PLACE</div>
+        <div className={`${style.sub_title_text} font-Involve font-light`}>IN PULSE IS THE PLACE</div>
         <div className={`${style.title_text}`}>
           WHERE <br /> <span className={`text-[#E11800]`}>DIGITAL ART </span>
           <br /> COMES TO LIFE

@@ -18,6 +18,10 @@ module.exports = {
     container: {
       screens: { ...containerScreens },
     },
+    fontFamily:{
+      'Involve':["Involve","Unbounded"],
+      'RoadRadio':["RoadRadio","Unbounded"]
+    }
   },
   plugins: [],
 };

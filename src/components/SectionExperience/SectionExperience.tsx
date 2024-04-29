@@ -18,8 +18,8 @@ export const SectionExperience: React.FC<ISectionExperience> = ({ classes = "" }
       <div className={`${style.experience_container}`}>
         <div className={`${style.experience_item}`}>
           <img src={icon1} alt="" className={`${style.experience_item_image}`} />
-          <h3 className={`${style.experience_item_name}`}>We increase</h3>
-          <p className={`${style.experience_item_description} ${style.grey}`}>
+          <h3 className={`${style.experience_item_name} font-Involve font-medium`}>We increase</h3>
+          <p className={`${style.experience_item_description} ${style.grey} font-Involve font-medium`}>
             your brand awareness, image and cultural relevance through collaborations with digital artists.
           </p>
 
@@ -29,8 +29,8 @@ export const SectionExperience: React.FC<ISectionExperience> = ({ classes = "" }
         </div>
         <div className={`${style.experience_item}`}>
           <img src={icon2} alt="" className={`${style.experience_item_image}`} />
-          <h3 className={`${style.experience_item_name}`}>We engage</h3>
-          <p className={`${style.experience_item_description} ${style.grey}`}>
+          <h3 className={`${style.experience_item_name} font-Involve font-medium`}>We engage</h3>
+          <p className={`${style.experience_item_description} ${style.grey} font-Involve font-medium`}>
             audiences through event launches, communication strategy development and media outreach.
           </p>{" "}
           <div className={style.arrow_container}>
@@ -39,8 +39,8 @@ export const SectionExperience: React.FC<ISectionExperience> = ({ classes = "" }
         </div>
         <div className={`${style.experience_item}`}>
           <img src={icon3} alt="" className={`${style.experience_item_image}`} />
-          <h3 className={`${style.experience_item_name}`}>We develop</h3>
-          <p className={`${style.experience_item_description} ${style.grey}`}>
+          <h3 className={`${style.experience_item_name} font-Involve font-medium`}>We develop</h3>
+          <p className={`${style.experience_item_description} ${style.grey} font-Involve font-medium`}>
             We develop creative concepts tailored to your needs that aim to engage your audience in an interactive way.
           </p>{" "}
           <div className={style.arrow_container}>
