@@ -16,18 +16,12 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
     loop: true,
     config: { duration: 4000 },
     from: {
-      background: `linear-gradient(to right, #f00, #ffa500, #ff0, #008000, #00f, #4b0082, #ee82ee)`,
+      background: "black",
     },
-
-    // to: [
-    //   {
-    //     background: `linear-gradient(to left, #ee82ee, #4b0082, #f00, #ffa500, #ff0, #008000, #00f )`,
-    //   },
-    // ],
   });
 
   return (
-    <div className={`${style.LiquidAnimation} ${classes}`}>
+    <div id="home" className={`${style.LiquidAnimation} ${classes}`}>
       <animated.div
         style={effect}
         className={`${style.rectangle} w-full xl:h-[42.188rem] lg:h-[42.188rem] md:h-[42.188rem] sm:h-[31.25rem] xs:h-[31.25rem] us:h-[46.875rem]`}

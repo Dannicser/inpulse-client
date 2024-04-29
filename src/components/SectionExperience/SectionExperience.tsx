@@ -14,7 +14,7 @@ interface ISectionExperience {
 
 export const SectionExperience: React.FC<ISectionExperience> = ({ classes = "" }) => {
   return (
-    <section className={`${classes}`}>
+    <section id="we" className={`${classes}`}>
       <div className={`${style.experience_container}`}>
         <div className={`${style.experience_item}`}>
           <img src={icon1} alt="" className={`${style.experience_item_image}`} />

@@ -1,6 +1,4 @@
-import React from "react";
-import logo from "../Header/assets/logo.svg";
-import { Header } from "../Header/Header";
+import React, { useState } from "react";
 
 import style from "./HeaderBurger.module.css";
 
@@ -11,33 +9,6 @@ interface IMenu {
   id: number;
 }
 
-const menu: IMenu[] = [
-  {
-    name: "Home",
-    link: "#1",
-    isActive: true,
-    id: 1,
-  },
-  {
-    name: "What are we",
-    link: "#2",
-    isActive: false,
-    id: 2,
-  },
-  {
-    name: "For Who?",
-    link: "#3",
-    isActive: false,
-    id: 3,
-  },
-  {
-    name: "Contacts",
-    link: "#4",
-    isActive: false,
-    id: 4,
-  },
-];
-
 interface IHeaderBurgerProps {
   classes?: string;
   active: boolean;
@@ -45,14 +16,62 @@ interface IHeaderBurgerProps {
 }
 
 export const HeaderBurger: React.FC<IHeaderBurgerProps> = ({ classes = "", active, setActive }) => {
+  const [links, setLinks] = useState<IMenu[]>([
+    {
+      name: "Home",
+      link: "#home",
+      isActive: true,
+      id: 1,
+    },
+    {
+      name: "What are we",
+      link: "#we",
+      isActive: false,
+      id: 2,
+    },
+    {
+      name: "For Who?",
+      link: "#forwhom",
+      isActive: false,
+      id: 3,
+    },
+    {
+      name: "Contacts",
+      link: "#contacts",
+      isActive: false,
+      id: 4,
+    },
+  ]);
+
+  function changeActiveLink(id: number) {
+    const changed = links.map((link) => {
+      if (link.id === id) {
+        return { ...link, isActive: true };
+      }
+
+      if (link.isActive) {
+        return { ...link, isActive: false };
+      }
+
+      return link;
+    });
+
+    setLinks(changed);
+
+    setActive(false);
+  }
+
   return (
     <>
       <div className={`${style.burger_inner}  ${active ? style.burger_inner_active : null}`}>
         <ul className={`${style.list}`}>
-          <li className={`${style.active}`}>Home</li>
-          <li className="list-item">What are we</li>
-          <li className="list-item">For Who?</li>
-          <li className="list-item">Contacts</li>
+          {links.map((item) => {
+            return (
+              <a href={item.link} onClick={() => changeActiveLink(item.id)} className={`${item.isActive ? style.active : ""}`}>
+                {item.name}
+              </a>
+            );
+          })}
         </ul>
         <ul className={`${style.social_list}`}>
           <li>

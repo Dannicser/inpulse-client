@@ -31,6 +31,7 @@ function App() {
       <Layout classes={`xl:mx-[7.5rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[1rem] xs:mx-[1rem] us:mx-[1.875rem] mt-20`}>
         <SectionBenefits />
       </Layout>
+
       <Footer />
     </div>
   );

@@ -14,33 +14,6 @@ interface IMenu {
   id: number;
 }
 
-const menu: IMenu[] = [
-  {
-    name: "Home",
-    link: "#1",
-    isActive: true,
-    id: 1,
-  },
-  {
-    name: "What are we",
-    link: "#2",
-    isActive: false,
-    id: 2,
-  },
-  {
-    name: "For Who?",
-    link: "#3",
-    isActive: false,
-    id: 3,
-  },
-  {
-    name: "Contacts",
-    link: "#4",
-    isActive: false,
-    id: 4,
-  },
-];
-
 interface IHeaderProps {
   classes?: string;
 }
@@ -48,12 +21,54 @@ interface IHeaderProps {
 export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
   const [burgerActive, setBurgerActive] = useState<boolean>(false);
 
+  const [links, setLinks] = useState<IMenu[]>([
+    {
+      name: "Home",
+      link: "#home",
+      isActive: true,
+      id: 1,
+    },
+    {
+      name: "What are we",
+      link: "#we",
+      isActive: false,
+      id: 2,
+    },
+    {
+      name: "For Who?",
+      link: "#forwhom",
+      isActive: false,
+      id: 3,
+    },
+    {
+      name: "Contacts",
+      link: "#contacts",
+      isActive: false,
+      id: 4,
+    },
+  ]);
+
   if (burgerActive) {
     document.body.classList.add("hide");
   } else {
     document.body.classList.remove("hide");
   }
 
+  function changeActiveLink(id: number) {
+    const changed = links.map((link) => {
+      if (link.id === id) {
+        return { ...link, isActive: true };
+      }
+
+      if (link.isActive) {
+        return { ...link, isActive: false };
+      }
+
+      return link;
+    });
+
+    setLinks(changed);
+  }
   return (
     <>
       <header className={`${style.Header} flex justify-between items-center h-9 ${classes}`}>
@@ -63,13 +78,14 @@ export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
           alt=""
         />
 
-        <menu className={`container xl:w-[25.5rem] lg:w-[23.5rem] md:w-[20.5rem]`}>
-          <div className={`flex justify-between max-md:hidden`}>
-            {menu.map((item) => {
+        <nav className={`container xl:w-[25.5rem] lg:w-[23.5rem] md:w-[20.5rem]`}>
+          <li className={`flex justify-between max-md:hidden`}>
+            {links.map((item) => {
               return (
                 <>
                   <a
                     href={item.link}
+                    onClick={() => changeActiveLink(item.id)}
                     className={`font-semibold text-base ${style.base_font} ${
                       item.isActive ? `text-primary font-bold underline underline-offset-2 decoration-[1.7px] ${style.isActive}` : `text-secondary`
                     }`}
@@ -79,8 +95,8 @@ export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
                 </>
               );
             })}
-          </div>
-        </menu>
+          </li>
+        </nav>
         <div className={`flex items-center`}>
           <Switcher />
           <div className={`md:hidden max-md:ml-10 z-10`} onClick={() => setBurgerActive(!burgerActive)}>
