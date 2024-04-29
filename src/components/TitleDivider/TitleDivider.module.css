@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 .TitleDividerWrapper {
   position: relative;
   margin-top: 70px;
@@ -81,7 +85,7 @@
   }
 
   .orange {
-    right: 60px;
+    right: 33%;
     top: 25px;
   }
 }
@@ -96,10 +100,17 @@
 
   .orange {
     width: 50px;
-    right: 18%;
+    right: 15%;
   }
 
   .TitleDivider {
     width: 330px;
   }
+}
+
+.line{
+  position: absolute;
+  left: 55%;
+  bottom: 20px;
+  width: 100vw;
 }
