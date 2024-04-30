@@ -12,7 +12,8 @@
   box-sizing: content-box;
   padding: 54px;
 
-  box-shadow: 0px 21px 73px -36px rgba(0, 0, 0, 0.63);
+  /*box-shadow: 0px 21px 73px -36px rgba(0, 0, 0, 0.63);*/
+  box-shadow: 0px 26px 62px -50px rgba(0,0,0,0.75);
 }
 
 .experience_item_description {

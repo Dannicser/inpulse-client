@@ -1,4 +1,5 @@
 .footer_top {
+  background-image:url("./assets/vector.png") ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -214,20 +215,31 @@
   .heart {
     height: 224px;
   }
+  .footer_top {
+    background-position: 50% 30%;
+  }
+
   .heart_text {
+
     top: 92px;
     left: 20px;
     font-size: 35px;
     line-height: 36px;
+
   }
   .heart_heart {
+    margin: auto;
+
     left: 130px;
     width: 287px;
+
   }
   .heart_pulse {
+  margin: auto;
     width: 210px;
     top: 132px;
     left: 150px;
+
   }
   .social_media img {
     width: 33px;
@@ -253,11 +265,12 @@
   .nav {
     font-size: 13px;
   }
+
 }
 
 @media (max-width: 440px) {
   .heart {
-    transform: scale(0.8);
+    /*transform: scale(0.8);*/
   }
 
   .heart_heart {

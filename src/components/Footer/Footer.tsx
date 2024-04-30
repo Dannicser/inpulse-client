@@ -17,7 +17,7 @@ import s from "./Footer.module.css";
 export const Footer: React.FC = () => {
   return (
     <footer id={"contacts"} className={`${s.footer} mb-3`}>
-      <div className={s.footer_top} style={{ backgroundImage: `url(${vector})` }}>
+      <div className={s.footer_top} >
         <Layout classes={`xl:mx-[7.5rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[1rem] xs:mx-[1rem] us:mx-[1.875rem] mt-20`}>
           <div className={s.footer_top_grid}>
             <div className={s.heart}>
