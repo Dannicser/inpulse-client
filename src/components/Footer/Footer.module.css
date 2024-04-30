@@ -105,7 +105,7 @@
   gap: 10px;
   border-radius: 168px;
   border: 1px solid #c5cfe3;
-  font-family: Gilroy, Unbounded, sans-serif !important;
+  font-family: Involve, Unbounded, sans-serif;
 
 }
 
@@ -124,7 +124,7 @@
   width: auto;
   height: 52px;
   background-color: transparent;
-  font-family: Gilroy, sans-serif !important;
+  font-family: Involve, Unbounded, sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -133,7 +133,6 @@
 
 .input::placeholder {
   color: #7886a1;
-  font-family: Gilroy,  sans-serif !important;
 }
 
 .footer_bottom_grid {
