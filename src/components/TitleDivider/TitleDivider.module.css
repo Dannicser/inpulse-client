@@ -1,7 +1,7 @@
 .TitleDividerWrapper {
   position: relative;
   margin-top: 70px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .orange::after {
