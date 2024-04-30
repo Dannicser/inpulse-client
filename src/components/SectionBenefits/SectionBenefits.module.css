@@ -175,12 +175,30 @@
   font-size: 14px;
 }
 
-.button_img {
-  padding: 14px;
-  aspect-ratio: 1/1;
-  border: 1px #000 solid;
-  border-radius: 50%;
+.button:hover .button_text{
+  color: #fe1b1c;
 }
+
+.button_img{
+  border-radius: 55%;
+  border:1px solid #000000;
+}
+
+/*.button:hover .button_img:hover{*/
+/*  border-radius: 55%;*/
+/*  border:1px solid #000000;*/
+/*}*/
+
+.button_img:hover {
+  border-radius: 55%;
+  border:1px solid #fe1b1c;
+}
+
+
+.button_img:hover {
+  fill: #fe1b1c;
+}
+
 
 @media (min-width: 490px) and (max-width: 1024px) {
   .benefits {

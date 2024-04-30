@@ -37,6 +37,11 @@
   width: 84%;
   left: auto;
 }
+.social_list_item :hover{
+  fill: #FE1B1C66;
+
+}
+
 
 .copy_wrights {
   font-family: Involve;

@@ -121,6 +121,12 @@
   background-color: #e43d2b;
 }
 
+.form_button:hover{
+  color: #e43d2b;
+  background-color: #FFF;
+  border: 1px solid #e43d2b;
+}
+
 .input {
   width: auto;
   height: 52px;
