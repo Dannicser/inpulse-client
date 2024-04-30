@@ -21,7 +21,7 @@ function App() {
         {/* <Divider classes="mx-[8.5rem]" /> */}
         {/* <div className={`text-3xl font-medium mt-[4rem]`}>Prints & Editions</div> */}
       </Layout>
-      <TextSlider classes={`mt-[4rem]`} />
+      <TextSlider classes={`mt-[1rem]`} />
       {/* <Slider classes={`mt-[2rem]`} /> */}
       <TitleDivider />
       <Layout classes="xl:mx-[10rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[1rem] xs:mx-[1rem] us:mx-[1.875rem]">

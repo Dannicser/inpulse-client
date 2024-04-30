@@ -22,18 +22,14 @@ export const SectionDo: React.FC<ISectionDo> = ({ classes = "" }) => {
 
   function useAddEffect() {
     if (timer.current) {
-      console.log("clear");
       setIsEffect(true);
       clearTimeout(timer.current);
     }
 
     timer.current = setTimeout(() => {
-      console.log("create");
       setIsEffect(false);
     }, 1000);
   }
-
-  console.log(isEffect);
 
   return (
     <section className={`${classes}`} id={`${style.do}`}>
