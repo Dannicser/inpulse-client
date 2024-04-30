@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { MutableRefObject, useRef } from "react";
 
 import style from "./SectionDo.module.css";
@@ -9,6 +10,8 @@ interface ISectionDo {
 
 export const SectionDo: React.FC<ISectionDo> = ({ classes = "" }) => {
   const [isEffect, setIsEffect] = useState(false);
+
+  const { t, i18n } = useTranslation();
 
   const timer = useRef(null) as MutableRefObject<any>;
 
@@ -35,20 +38,21 @@ export const SectionDo: React.FC<ISectionDo> = ({ classes = "" }) => {
     <section className={`${classes}`} id={`${style.do}`}>
       <div className={`${style.do_inner}`}>
         <div className={`${style.do_title}`}>
-          <span className={`${style.above_title} font-light`}>WHAT</span>
+          <span className={`${style.above_title} font-light`}>{t("what")}</span>
           <h3 className={`${style.title}`}>
-            WE <span className={`${style.red}`}>DO</span>?
+            {t("we")} <span className={`${style.red}`}> {t("do")}</span>?
           </h3>
         </div>
         <span className={`${style.do_hashtag}`}>
-          <span>#ourmotto</span>
+          <span>{t("motto")}</span>
         </span>
         <div className={`${style.do_info} ${isEffect ? `opacity-60` : `opacity-100`} transition-opacity duration-1000 font-Involve font-medium`}>
           <p className={`${style.description}`}>
-            We are a creative agency integrating Tech and <span className={`${style.grey}`}>Digital art.</span>
+            {t("do_text_up_left")}
+            <span className={`${style.grey}`}> {t("do_text_up_right")}</span>
             <br />
             <br />
-            <p className={`${style.grey}`}>We provide targeted marketing solutions for businesses and unite them with cultural forces.</p>
+            <p className={`${style.grey}`}>{t("do_text")}</p>
           </p>
         </div>
       </div>

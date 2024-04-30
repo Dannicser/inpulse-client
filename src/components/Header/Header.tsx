@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { useTranslation } from "react-i18next";
+
 import { Switcher } from "../Switcher/Switcher";
 
 import { HeaderBurger } from "../Header-burger/HeaderBurger";
@@ -21,29 +23,31 @@ interface IHeaderProps {
 }
 
 export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
+  const { t, i18n } = useTranslation();
+
   const [burgerActive, setBurgerActive] = useState<boolean>(false);
 
   const [links, setLinks] = useState<IMenu[]>([
     {
-      name: "Home",
+      name: "home",
       link: "#home",
       isActive: true,
       id: 1,
     },
     {
-      name: "What are we",
+      name: "whatarewe",
       link: "#we",
       isActive: false,
       id: 2,
     },
     {
-      name: "For Who?",
+      name: "forwhom",
       link: "#forwhom",
       isActive: false,
       id: 3,
     },
     {
-      name: "Contacts",
+      name: "contacts",
       link: "#contacts",
       isActive: false,
       id: 4,
@@ -92,7 +96,7 @@ export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
                       item.isActive ? `text-primary font-bold underline underline-offset-2 decoration-[1.7px] ${style.isActive}` : `text-secondary`
                     }`}
                   >
-                    {item.name}
+                    {t(item.name)}
                   </a>
                 </>
               );
