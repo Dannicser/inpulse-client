@@ -16,9 +16,12 @@
   width: 5px;
   height: 5px;
   border-radius: 60%;
+
+
 }
 .base_font {
-  font-family: "Arial";
+  font-family: Involve, Unbounded, sans-serif;
+  font-weight: 500;
 }
 
 .cross {

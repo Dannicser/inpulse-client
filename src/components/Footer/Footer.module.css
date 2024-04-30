@@ -168,6 +168,7 @@
   justify-self: center;
   font-family: Involve, Unbounded, sans-serif;
   color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
 }
 
 @media (max-width: 1200px) {
@@ -311,4 +312,10 @@
   .copyright {
     font-size: 14px;
   }
+}
+
+
+.nav_item{
+  font-family: "Involve";
+  font-weight: 500;
 }

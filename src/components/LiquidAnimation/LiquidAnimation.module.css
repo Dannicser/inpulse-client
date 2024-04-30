@@ -122,6 +122,8 @@
 .circle_explore_text {
   transform: rotate(-45deg);
   color: #fe1b1c;
+  font-family: Involve;
+  font-weight: 500;
 }
 
 .title_container {

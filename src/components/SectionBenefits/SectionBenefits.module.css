@@ -26,6 +26,7 @@
   line-height: 70px;
 }
 .above_title {
+  font-weight: 300;
   font-size: 22px;
 }
 
@@ -33,6 +34,8 @@
   grid-area: hashtags;
   align-self: end;
   justify-self: end;
+  font-family: Inter;
+  font-weight: 400;
 }
 
 .hashtags_line {
@@ -51,9 +54,37 @@
   grid-area: pictures;
   margin: 60px 0;
   display: grid;
-  grid-template-areas: "one two three four five";
-  grid-template-columns: 2fr 1.5fr 1.5fr 0.8fr 1fr;
-  gap: 20px;
+  /*grid-template-areas: "one two three four five";*/
+  grid-template-areas:
+    "one . three . ."
+    "one two three four five"
+    "one two three four five"
+    "one two three four five"
+    ". two . four five";
+  /*grid-template-columns: 2fr 1.5fr 1.5fr 0.8fr 1fr;*/
+  grid-template-columns: 325px 175px 260px 185px 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  overflow-x: auto;
+  gap: 63px;
+}
+
+.pictures::-webkit-scrollbar {
+  width: 20px;
+}
+
+.pictures::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.pictures::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.pictures::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
 
 .card:nth-child(1) {
@@ -61,6 +92,7 @@
 }
 .card:nth-child(2) {
   grid-area: two;
+  margin-bottom: 20px;
 }
 .card:nth-child(3) {
   grid-area: three;
@@ -138,7 +170,8 @@
 }
 
 .button_text {
-  font-weight: 500;
+  font-family: "RoadRadio";
+  font-weight: 700;
   font-size: 14px;
 }
 
@@ -157,12 +190,18 @@
       "hashtags button";
   }
 
+/*  .pictures {*/
+/*    grid-template-areas:*/
+/*      "one two"*/
+/*      "one four"*/
+/*      "three five";*/
+/*  grid-template-columns: 1fr 0.7fr;*/
+/*}*/
   .pictures {
-    grid-template-areas:
-      "one two"
-      "one four"
-      "three five";
-    grid-template-columns: 1fr 0.7fr;
+    width: auto;
+    overflow-x: scroll;
+    margin-inline: -1.875rem;
+    padding-inline: 1.875rem;
   }
   .card:nth-child(4) {
     align-self: end;

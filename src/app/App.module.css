@@ -4,3 +4,13 @@
   /* margin-left: auto;
   margin-right: auto; */
 }
+
+@font-face {
+  font-family: "Involve";
+  src: url("../../public/fonts/Involve/Involve-VF-BF65bb0f67a112e.ttf");
+}
+
+@font-face {
+  font-family: "RoadRadio";
+  src: url("../../public/fonts/RoadRadio/roadradio_bold.otf");
+}
