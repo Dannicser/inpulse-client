@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/pulse/static/css/main.783d15cd.css",
-    "main.js": "/pulse/static/js/main.b52f3dd8.js",
+    "main.css": "/pulse/static/css/main.83b611d6.css",
+    "main.js": "/pulse/static/js/main.8fcf0c4d.js",
     "static/media/one.png": "/pulse/static/media/one.119136ee55067ec578b3.png",
     "static/media/three.png": "/pulse/static/media/three.8ec00c4074c1808d73a0.png",
+    "static/media/orange.svg": "/pulse/static/media/orange.241d07818e77643301953d8da8f13881.svg",
     "static/media/vector.png": "/pulse/static/media/vector.2816a948a050932359fa.png",
     "static/media/four.png": "/pulse/static/media/four.087d36ca1243bcb3ce54.png",
     "static/media/two.png": "/pulse/static/media/two.63634262daf81082f41e.png",
@@ -23,11 +24,11 @@
     "static/media/telegram.svg": "/pulse/static/media/telegram.f8edd5c6bddcdac357742ddd38a7c214.svg",
     "static/media/experience-icon-1.svg": "/pulse/static/media/experience-icon-1.23ba7e009c2df2feae5fcfccedff89bb.svg",
     "static/media/cross.svg": "/pulse/static/media/cross.2001e956d267bc9b1a2349ee0a8ee521.svg",
-    "main.783d15cd.css.map": "/pulse/static/css/main.783d15cd.css.map",
-    "main.b52f3dd8.js.map": "/pulse/static/js/main.b52f3dd8.js.map"
+    "main.83b611d6.css.map": "/pulse/static/css/main.83b611d6.css.map",
+    "main.8fcf0c4d.js.map": "/pulse/static/js/main.8fcf0c4d.js.map"
   },
   "entrypoints": [
-    "static/css/main.783d15cd.css",
-    "static/js/main.b52f3dd8.js"
+    "static/css/main.83b611d6.css",
+    "static/js/main.8fcf0c4d.js"
   ]
 }
