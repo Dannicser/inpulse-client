@@ -1,7 +1,7 @@
 import style from "./TitleDivider.module.css";
 
 import decoration from "./assets/decoration.png";
-import orange from "./assets/orange.png";
+import orange from "./assets/orange.svg";
 
 interface ITitleDivider {
   classes?: string;

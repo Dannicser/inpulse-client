@@ -11,7 +11,7 @@
   bottom: 25px;
   position: absolute;
   right: 0;
-  z-index: -100;
+  z-index: -1;
 }
 
 .TitleDivider {
@@ -28,7 +28,7 @@
 .orange {
   display: block;
   position: absolute;
-  bottom: 5px;
+  bottom: 7px;
   right: 150px;
   padding: 0px 15px;
 }

@@ -13,6 +13,8 @@
 }
 
 .list {
+  font-family: Involve;
+  font-weight: 500;
   margin: auto;
   margin-top: 70px;
   height: 380px;
@@ -37,6 +39,7 @@
 }
 
 .copy_wrights {
+  font-family: Involve;
   position: absolute;
   margin-top: 90px;
   font-size: 14px;
