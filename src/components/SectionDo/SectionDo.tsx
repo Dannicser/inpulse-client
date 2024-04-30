@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { MutableRefObject, useRef } from "react";
 
 import style from "./SectionDo.module.css";
 
@@ -7,6 +8,33 @@ interface ISectionDo {
 }
 
 export const SectionDo: React.FC<ISectionDo> = ({ classes = "" }) => {
+  const [isEffect, setIsEffect] = useState(false);
+
+  const timer = useRef(null) as MutableRefObject<any>;
+
+  useEffect(() => {
+    window.addEventListener("scroll", useAddEffect);
+
+    return () => {
+      window.removeEventListener("scroll", useAddEffect);
+    };
+  }, []);
+
+  function useAddEffect() {
+    if (timer.current) {
+      console.log("clear");
+      setIsEffect(true);
+      clearTimeout(timer.current);
+    }
+
+    timer.current = setTimeout(() => {
+      console.log("create");
+      setIsEffect(false);
+    }, 1000);
+  }
+
+  console.log(isEffect);
+
   return (
     <section className={`${classes}`} id={`${style.do}`}>
       <div className={`${style.do_inner}`}>
@@ -19,7 +47,7 @@ export const SectionDo: React.FC<ISectionDo> = ({ classes = "" }) => {
         <span className={`${style.do_hashtag}`}>
           <span>#ourmotto</span>
         </span>
-        <div className={`${style.do_info} font-Involve font-medium`}>
+        <div className={`${style.do_info} ${isEffect ? `opacity-60` : `opacity-100`} transition-opacity duration-1000 font-Involve font-medium`}>
           <p className={`${style.description}`}>
             We are a creative agency integrating Tech and <span className={`${style.grey}`}>Digital art.</span>
             <br />
