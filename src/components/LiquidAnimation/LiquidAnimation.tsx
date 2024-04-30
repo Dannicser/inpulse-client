@@ -5,6 +5,8 @@ import { useSpring, animated } from "@react-spring/web";
 import logo from "./assets/logo.svg";
 import promo from "./assets/promo.svg";
 
+import bg_image from './assets/bg_image.png'
+
 import style from "./LiquidAnimation.module.css";
 
 interface ILiquidAnimationProps {
@@ -25,7 +27,9 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
       <animated.div
         style={effect}
         className={`${style.rectangle} w-full xl:h-[42.188rem] lg:h-[42.188rem] md:h-[42.188rem] sm:h-[31.25rem] xs:h-[31.25rem] us:h-[46.875rem]`}
-      ></animated.div>
+      >
+          <img src={bg_image} className={style.bg_image}/>
+      </animated.div>
       <div
         className={`${style.rectangle_bottom} us:rounded-[30px] xs:rounded-[30px] sm:rounded-[30px] md:rounded-[40px] lg:rounded-[40px] xl:rounded-tr-[50px] xl:w-[37%] xl:h-[42%] lg:w-[35%] lg:h-[42%] md:w-[39%] md:h-[42%] sm:w-[32%] sm:h-[47%] xs:w-[32%] xs:h-[47%] us:w-[53%] us:h-[31%]`}
       ></div>
