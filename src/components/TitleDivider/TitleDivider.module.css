@@ -111,4 +111,10 @@
   .TitleDivider {
     width: 310px;
   }
+
+  .orange::after{
+    bottom: 10px;
+    left: 50px;
+
+  }
 }
