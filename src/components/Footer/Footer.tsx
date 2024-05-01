@@ -64,23 +64,23 @@ export const Footer: React.FC = () => {
 
             <form className={s.form}>
               <Input />
-              <button className={s.form_button}>{t("send")}</button>
+              <button className={`${s.form_button} transition-opacity duration-500 hover:opacity-70`}>{t("send")}</button>
             </form>
           </div>
 
           <div className={s.footer_bottom_grid}>
             <img className={s.footer_bottom_logo} src={logo} alt="logo" />
             <nav className={s.nav}>
-              <a className={s.nav_item} href="#home">
+              <a className={`${s.nav_item} transition-opacity duration-500 hover:opacity-70`} href="#home">
                 {t("home")}
               </a>
-              <a className={s.nav_item} href="#we">
+              <a className={`${s.nav_item} transition-opacity duration-500 hover:opacity-70`} href="#we">
                 {t("whatarewe")}
               </a>
-              <a className={s.nav_item} href="#forwhom">
+              <a className={`${s.nav_item} transition-opacity duration-500 hover:opacity-70`} href="#forwhom">
                 {t("forwhom")}
               </a>
-              <a className={s.nav_item} href="#contacts">
+              <a className={`${s.nav_item} transition-opacity duration-500 hover:opacity-70`} href="#contacts">
                 {t("contacts")}
               </a>
             </nav>

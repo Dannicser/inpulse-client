@@ -92,7 +92,7 @@ export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
                   <a
                     href={item.link}
                     onClick={() => changeActiveLink(item.id)}
-                    className={`font-semibold text-base ${style.base_font} ${
+                    className={`font-semibold transition-opacity duration-500 hover:opacity-70 text-base ${style.base_font} ${
                       item.isActive ? `text-primary font-bold underline underline-offset-2 decoration-[1.7px] ${style.isActive}` : `text-secondary`
                     }`}
                   >

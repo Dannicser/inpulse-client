@@ -25,13 +25,17 @@ export const Switcher: React.FC = () => {
     <div className={`z-10`}>
       <span
         onClick={() => changeLang("ru")}
-        className={`${selectedLang === "ru" ? `text-primary` : ""} mr-4 font-medium font-Involve cursor-pointer`}
+        className={`${
+          selectedLang === "ru" ? `text-primary` : ""
+        } mr-4 font-medium font-Involve cursor-pointer transition-opacity duration-500 hover:opacity-70`}
       >
         {t("rus")}
       </span>
       <span
         onClick={() => changeLang("en-US")}
-        className={`${selectedLang === "en-US" ? `text-primary` : ""}  font-medium font-Involve cursor-pointer`}
+        className={`${
+          selectedLang === "en-US" ? `text-primary` : ""
+        }  font-medium font-Involve cursor-pointer transition-opacity duration-500 hover:opacity-70`}
       >
         {t("eng")}
       </span>
