@@ -13,10 +13,11 @@
   object-fit: cover;
   border-radius: 45px 45px 38px 45px;
   visibility: visible;
+  z-index: 10000000;
 }
 
 .rectangle_bottom {
-  overflow: hidden;
+  /* overflow: hidden; */
   position: absolute;
   background-color: white;
   bottom: -61.5px;
@@ -26,7 +27,6 @@
 }
 
 .rectangle_top {
-  overflow: hidden;
   position: absolute;
   background-color: white;
   bottom: 0;
@@ -108,12 +108,14 @@
 }
 
 /*  */
+
 .capsule {
+  /*  */
   position: absolute;
   display: flex;
   justify-content: center;
   border-radius: 45px;
-  left: 500px;
+  left: 39%;
 
   background-image: url("./assets/capsule.png");
   background-repeat: no-repeat;
@@ -132,10 +134,15 @@
 }
 
 .circle_explore_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   transform: rotate(-45deg);
   color: #fe1b1c;
   font-family: Involve;
   font-weight: 500;
+  line-height: 20px;
 }
 
 .title_container {
@@ -173,8 +180,17 @@
     font-size: 29px;
     line-height: 35.92px;
   }
-  .capsule {
-    left: 65px;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .rectangle_top {
+    top: -55px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .circle_explore_text {
+    font-size: 13px;
   }
 }
 
@@ -188,12 +204,20 @@
   .sub_title_text {
     font-size: 11px;
   }
+
+  .capsule {
+    left: 36%;
+  }
 }
 
 @media (max-width: 767px) {
   .title_text {
     font-size: 32px;
     margin-top: 10px;
+  }
+
+  .capsule {
+    left: 36%;
   }
 }
 
@@ -220,8 +244,8 @@
     justify-content: center;
   }
   .capsule {
-    width: 48%;
-    left: 12%;
+    /* width: 48%; */
+    left: 20%;
   }
 
   .circle_left {
@@ -235,6 +259,23 @@
 
   .sub_title_text {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .mobile_circle_middle {
+    left: 48%;
+  }
+
+  .capsule {
+    width: 45%;
+    left: 12%;
+  }
+}
+
+@media (max-width: 350px) {
+  .mobile_circle_middle {
+    left: 46%;
   }
 }
 
@@ -262,13 +303,14 @@
     width: 15rem;
   }
 
-  .mobile_circle_middle {
-    bottom: 11%;
-    left: 48.7%;
-  }
-
   .capsule {
-    left: 9%;
+    left: 7%;
+  }
+}
+
+@media (max-width: 370px) {
+  .capsule {
+    width: 50%;
   }
 }
 

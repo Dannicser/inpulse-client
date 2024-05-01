@@ -14,14 +14,14 @@ module.exports = {
         secondary: "#00000099",
       },
     },
-    screens: { xs: "490px", us: "0px", ...defaultTheme.screens },
+    screens: { xs: "450px", us: "0px", ...defaultTheme.screens },
     container: {
       screens: { ...containerScreens },
     },
-    fontFamily:{
-      'Involve':["Involve","Unbounded"],
-      'RoadRadio':["RoadRadio","Unbounded"]
-    }
+    fontFamily: {
+      Involve: ["Involve", "Unbounded"],
+      RoadRadio: ["RoadRadio", "Unbounded"],
+    },
   },
   plugins: [],
 };
