@@ -23,7 +23,7 @@ function App() {
       </Layout>
       <TextSlider classes={`mt-[1rem]`} />
       {/* <Slider classes={`mt-[2rem]`} /> */}
-      <TitleDivider />
+      <TitleDivider classes={`mt-[3rem]`} />
       <Layout classes="xl:mx-[10rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[1rem] xs:mx-[1rem] us:mx-[1.875rem]">
         <SectionExperience />
       </Layout>

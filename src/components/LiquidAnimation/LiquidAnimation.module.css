@@ -241,6 +241,7 @@
 @media (max-width: 1024px) {
   .circle_explore_text {
     font-size: 13px;
+    line-height: 15px;
   }
 }
 
