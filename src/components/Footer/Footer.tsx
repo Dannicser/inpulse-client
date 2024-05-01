@@ -71,16 +71,16 @@ export const Footer: React.FC = () => {
           <div className={s.footer_bottom_grid}>
             <img className={s.footer_bottom_logo} src={logo} alt="logo" />
             <nav className={s.nav}>
-              <a className={s.nav_item} href="#">
+              <a className={s.nav_item} href="#home">
                 {t("home")}
               </a>
-              <a className={s.nav_item} href="#">
+              <a className={s.nav_item} href="#we">
                 {t("whatarewe")}
               </a>
-              <a className={s.nav_item} href="#">
+              <a className={s.nav_item} href="#forwhom">
                 {t("forwhom")}
               </a>
-              <a className={s.nav_item} href="#">
+              <a className={s.nav_item} href="#contacts">
                 {t("contacts")}
               </a>
             </nav>
