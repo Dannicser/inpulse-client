@@ -120,6 +120,8 @@
   background-image: url("./assets/capsule.png");
   background-repeat: no-repeat;
   background-position: 50% 20%;
+
+  z-index: 10;
 }
 
 .circle_explore {
@@ -166,6 +168,44 @@
 .sub_title_text {
   font-size: 14.66px;
   line-height: 15.36px;
+}
+
+/*  */
+
+.stay {
+  top: 15%;
+  position: absolute;
+  font-size: 115px;
+  left: 8%;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.oval {
+  top: 37%;
+  opacity: 0.8;
+  position: absolute;
+
+  left: 33%;
+}
+
+.n {
+  top: 30%;
+  opacity: 0.95;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  left: 52%;
+  font-size: 155px;
+}
+
+.pulse {
+  font-size: 115px;
+  right: 10%;
+  bottom: 15%;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
 }
 
 @media (max-width: 1439px) {

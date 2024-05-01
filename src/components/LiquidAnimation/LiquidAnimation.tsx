@@ -7,6 +7,7 @@ import { useSpring, animated } from "@react-spring/web";
 import logo from "./assets/logo.svg";
 import promo from "./assets/promo.svg";
 import bg_image from "./assets/bg_image.png";
+import oval from "./assets/oval.png";
 
 import style from "./LiquidAnimation.module.css";
 
@@ -80,7 +81,12 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
         <img className={`w-[4.250rem]`} src={logo} alt="" />
       </div>
 
-      {/* <div className={`${style.desktop_logo_container}`}></div> */}
+      <div className={`${style.stay} max-lg:hidden`}>STAY</div>
+      <div className={`${style.pulse} max-lg:hidden`}>PULSE</div>
+      <div className={`${style.oval} max-lg:hidden`}>
+        <img src={oval} alt="" />
+      </div>
+      <div className={`${style.n} max-lg:hidden`}>N</div>
 
       <div
         className={`${style.logo_container} lg:hidden  opacity-75 us:right-0 us:bottom-[12rem] xs:right-0 xs:bottom-0 sm:right-0 sm:bottom-0 md:right-0 md:bottom-0 lg:right-0 lg:bottom-0 xl:right-0 xl:bottom-0 xl:mb-[3.75rem] lg:mb-[3rem] md:mb-[2.5rem] sm:mb-[2rem] xs:mb-[2rem] us:mb-[2rem] xl:mr-[3.75rem] lg:mr-[3rem] md:mr-[2.5rem] sm:mr-[2rem] xs:mr-[1.2rem] us:mx-0`}
