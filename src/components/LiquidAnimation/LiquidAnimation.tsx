@@ -67,9 +67,11 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
           <div>{t("explore_more")}</div>
         </div>
       </div>
-      <div className={`${style.title_container} bottom-[1.5rem]`}>
-        <div className={`${style.sub_title_text} font-Involve font-light`}>{t("pulse_sub_title")}</div>
-        <div className={`${style.title_text}`}>
+      <div className={`${style.title_container} bottom-[1.3rem]`}>
+        <div className={`${style.sub_title_text} font-Involve font-light`}>
+          <span className={`max-lg:hidden`}>{t("in_pulse")}</span> {t("pulse_sub_title")}
+        </div>
+        <div className={`${style.title_text} ${i18n.language === "ru" ? style.title_text_ru : ""} `}>
           {t("where")} <br /> {t("digital")} {t("digital") ? <br /> : ""} <span className={`text-[#E11800]`}>{t("art")} </span>
           {t("in")} <br /> {t("comes")} {t("reality")}
         </div>
@@ -89,11 +91,11 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
       <div className={`${style.n} max-lg:hidden`}>N</div>
 
       <div
-        className={`${style.logo_container} lg:hidden  opacity-75 us:right-0 us:bottom-[12rem] xs:right-0 xs:bottom-0 sm:right-0 sm:bottom-0 md:right-0 md:bottom-0 lg:right-0 lg:bottom-0 xl:right-0 xl:bottom-0 xl:mb-[3.75rem] lg:mb-[3rem] md:mb-[2.5rem] sm:mb-[2rem] xs:mb-[2rem] us:mb-[2rem] xl:mr-[3.75rem] lg:mr-[3rem] md:mr-[2.5rem] sm:mr-[2rem] xs:mr-[1.2rem] us:mx-0`}
+        className={`${style.logo_container} lg:hidden opacity-75 us:right-0 us:bottom-[12rem] xs:right-0 xs:bottom-0 sm:right-0 sm:bottom-0 md:right-0 md:bottom-0 lg:right-0 lg:bottom-0 xl:right-0 xl:bottom-0 xl:mb-[3.75rem] lg:mb-[3rem] md:mb-[2.5rem] sm:mb-[2rem] xs:mb-[2rem] us:mb-[2rem] xl:mr-[3.75rem] lg:mr-[3rem] md:mr-[2.5rem] sm:mr-[2rem] xs:mr-[1rem] us:mx-0`}
       >
         <div>
           <img className={`mb-2 lg:w-[7.688rem] md:w-[7.688rem] sm:w-[5.25rem] xs:w-[5.25rem] us:w-[5.25rem] ml-auto`} src={logo} alt="" />
-          <img className={`${style.promo} xl:w-[26rem] lg:w-[22rem] md:w-[20rem] sm:w-[15rem] xs:w-[12rem] us:w-[17.188rem]`} src={promo} alt="" />
+          <img className={`${style.promo} xl:w-[26rem] lg:w-[22rem] md:w-[20rem] sm:w-[15rem] xs:w-[11rem] us:w-[15.188rem]`} src={promo} alt="" />
         </div>
       </div>
     </div>
