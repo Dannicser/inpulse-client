@@ -28,7 +28,7 @@
 
 .decoration {
   position: absolute;
-  top: 5px;
+  top: -2px;
   left: -45%;
   width: 330px;
   height: 51px;
@@ -97,5 +97,122 @@
 
   .experience::after {
     top: -2px;
+  }
+}
+
+/* ----------------------------------------------- */
+
+.TitleDividerWrapperRu {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.TitleDividerContainerRu {
+  font-family: RoadRadio, sans-serif;
+  width: 662px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.TitleUp {
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+.TitleUp::before {
+  position: absolute;
+  bottom: -10px;
+  right: 490px;
+  content: url("./assets/decoration.png");
+}
+
+.TitleMiddle {
+  display: flex;
+  justify-content: start;
+}
+
+.TitleMiddle {
+  position: relative;
+}
+
+.TitleMiddle p::after {
+  position: absolute;
+  margin-left: 10px;
+  bottom: -8px;
+  content: url("./assets/orange.svg");
+}
+
+.TitleDown {
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 1050px) {
+  .TitleUp::before {
+    position: absolute;
+    bottom: 40px;
+    right: 320px;
+  }
+}
+
+@media (max-width: 800px) {
+  .TitleDividerContainerRu {
+    font-size: 37px;
+    width: 550px;
+    line-height: 37px;
+  }
+
+  .TitleUp::before {
+    right: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .TitleDividerContainerRu {
+    font-size: 32px;
+    width: 500px;
+    line-height: 32px;
+  }
+
+  .TitleUp::before {
+    right: 35%;
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 500px) {
+  .TitleDividerContainerRu {
+    font-size: 22px;
+    width: 338px;
+    line-height: 22px;
+  }
+
+  .TitleMiddle p::after {
+    bottom: -11px;
+    transform: scale(0.6);
+    margin-left: -2px;
+  }
+
+  .TitleUp::before {
+    right: 23%;
+    bottom: 15px;
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 370px) {
+  .TitleUp::before {
+    right: 17%;
+  }
+}
+
+@media (max-width: 340px) {
+  .TitleUp::before {
+    right: 10%;
   }
 }

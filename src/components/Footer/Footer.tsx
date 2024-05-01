@@ -16,6 +16,8 @@ import magic from "./assets/magic.png";
 
 import s from "./Footer.module.css";
 
+import background from "./assets/background.png";
+
 export const Footer: React.FC = () => {
   const { t, i18n } = useTranslation();
 
@@ -53,7 +55,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className={s.email}>
-              <img className={s.email_img} src={magic} alt="magic" />
+              <img className={s.email_img} src={background} alt="magic" />
               <div className={s.email_content}>
                 {t("newyork")} & {t("moscow")} <br />
                 <a href="#">magic@inpulse.events</a>

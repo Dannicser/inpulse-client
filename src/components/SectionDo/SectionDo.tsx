@@ -49,7 +49,7 @@ export const SectionDo: React.FC<ISectionDo> = ({ classes = "" }) => {
         <div className={`${style.do_info} ${isEffect ? `opacity-60` : `opacity-100`} transition-opacity duration-1000 font-Involve font-medium`}>
           <p className={`${style.description}`}>
             {t("do_text_up_left")}
-            <span className={`${style.grey}`}> {t("do_text_up_right")}</span>
+            <span> {t("do_text_up_right")}</span>
             <br />
             <br />
             <p className={`${style.grey}`}>{t("do_text")}</p>

@@ -16,8 +16,6 @@
   width: 5px;
   height: 5px;
   border-radius: 60%;
-
-
 }
 .base_font {
   font-family: Involve, Unbounded, sans-serif;
@@ -27,4 +25,10 @@
 .cross {
   max-width: 28px;
   height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .isActive::after {
+    right: -7px;
+  }
 }

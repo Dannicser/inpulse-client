@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import style from "./HeaderBurger.module.css";
+import { useTranslation } from "react-i18next";
 
 interface IMenu {
   name: string;
@@ -16,27 +17,29 @@ interface IHeaderBurgerProps {
 }
 
 export const HeaderBurger: React.FC<IHeaderBurgerProps> = ({ classes = "", active, setActive }) => {
+  const { t, i18n } = useTranslation();
+
   const [links, setLinks] = useState<IMenu[]>([
     {
-      name: "Home",
+      name: "home",
       link: "#home",
       isActive: true,
       id: 1,
     },
     {
-      name: "What are we",
+      name: "whatarewe",
       link: "#we",
       isActive: false,
       id: 2,
     },
     {
-      name: "For Who?",
+      name: "forwhom",
       link: "#forwhom",
       isActive: false,
       id: 3,
     },
     {
-      name: "Contacts",
+      name: "contacts",
       link: "#contacts",
       isActive: false,
       id: 4,
@@ -68,7 +71,7 @@ export const HeaderBurger: React.FC<IHeaderBurgerProps> = ({ classes = "", activ
           {links.map((item) => {
             return (
               <a href={item.link} onClick={() => changeActiveLink(item.id)} className={`${item.isActive ? style.active : ""}`}>
-                {item.name}
+                {t(item.name)}
               </a>
             );
           })}
@@ -123,7 +126,7 @@ export const HeaderBurger: React.FC<IHeaderBurgerProps> = ({ classes = "", activ
             </a>
           </li>
 
-          <div className={style.copy_wrights}>All rights reserved © 2024 IN PULSE</div>
+          <div className={style.copy_wrights}>All rights reserved © 2024 In Pulse</div>
         </ul>
       </div>
     </>

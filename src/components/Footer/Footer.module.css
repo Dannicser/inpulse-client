@@ -79,7 +79,8 @@
 
 .email_img {
   width: 132px;
-  height: auto;
+  height: 44px;
+  border-radius: 30px;
 }
 
 .email_content {
@@ -106,7 +107,6 @@
   border-radius: 168px;
   border: 1px solid #c5cfe3;
   font-family: Gilroy, Unbounded, sans-serif !important;
-
 }
 
 .form_button {
@@ -133,7 +133,7 @@
 
 .input::placeholder {
   color: #7886a1;
-  font-family: Gilroy,  sans-serif !important;
+  font-family: Gilroy, sans-serif !important;
 }
 
 .footer_bottom_grid {
@@ -269,6 +269,7 @@
 
   .form_button {
     width: 90px;
+    font-size: 12px;
   }
   .email_img {
     width: 100px;
@@ -315,10 +316,13 @@
   .copyright {
     font-size: 14px;
   }
+
+  .form_button {
+    font-size: 10px;
+  }
 }
 
-
-.nav_item{
+.nav_item {
   font-family: "Involve";
   font-weight: 500;
 }

@@ -84,7 +84,7 @@ export const Header: React.FC<IHeaderProps> = ({ classes = "" }) => {
           alt=""
         />
 
-        <nav className={`container xl:w-[25.5rem] lg:w-[23.5rem] md:w-[20.5rem]`}>
+        <nav className={`container xl:w-[25.5rem] lg:w-[23.5rem] md:w-[21rem]`}>
           <li className={`flex justify-between max-md:hidden`}>
             {links.map((item) => {
               return (
