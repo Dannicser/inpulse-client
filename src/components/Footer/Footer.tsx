@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import { Layout } from "../Layout/Layout";
 
 import vector from "./assets/vector.png";
@@ -15,6 +17,8 @@ import magic from "./assets/magic.png";
 import s from "./Footer.module.css";
 
 export const Footer: React.FC = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <footer id={"contacts"} className={`${s.footer} mb-3`}>
       <div className={s.footer_top} style={{ backgroundImage: `url(${vector})` }}>
@@ -29,7 +33,8 @@ export const Footer: React.FC = () => {
             <div className={s.social}>
               <img className={s.social_logo} src={logo} alt="logo" />
               <div className={s.social_text}>
-                Shall we tell an <br /> exciting story together?
+                {t("story_up")}
+                <br /> {t("story_bottom")}
               </div>
               <div className={s.social_media}>
                 <a href="#">
@@ -50,14 +55,14 @@ export const Footer: React.FC = () => {
             <div className={s.email}>
               <img className={s.email_img} src={magic} alt="magic" />
               <div className={s.email_content}>
-                New York & Moscow <br />
+                {t("newyork")} & {t("moscow")} <br />
                 <a href="#">magic@inpulse.events</a>
               </div>
             </div>
 
             <form className={s.form}>
               <Input />
-              <button className={s.form_button}>Send</button>
+              <button className={s.form_button}>{t("send")}</button>
             </form>
           </div>
 
@@ -65,19 +70,19 @@ export const Footer: React.FC = () => {
             <img className={s.footer_bottom_logo} src={logo} alt="logo" />
             <nav className={s.nav}>
               <a className={s.nav_item} href="#">
-                Home
+                {t("home")}
               </a>
               <a className={s.nav_item} href="#">
-                What are we
+                {t("whatarewe")}
               </a>
               <a className={s.nav_item} href="#">
-                For Who?
+                {t("forwhom")}
               </a>
               <a className={s.nav_item} href="#">
-                Contacts
+                {t("contacts")}
               </a>
             </nav>
-            <div className={s.copyright}>All rights reserved © 2024 IN PULSE</div>
+            <div className={s.copyright}>All rights reserved © 2024 In Pulse</div>
           </div>
         </Layout>
       </div>
@@ -86,7 +91,9 @@ export const Footer: React.FC = () => {
 };
 
 const Input: React.FC = () => {
+  const { t, i18n } = useTranslation();
+
   const [input, setInput] = useState("");
 
-  return <input className={s.input} type="text" placeholder="Share your story" value={input} onChange={(e) => setInput(e.target.value)} />;
+  return <input className={s.input} type="text" placeholder={t("share_story")} value={input} onChange={(e) => setInput(e.target.value)} />;
 };

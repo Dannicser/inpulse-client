@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useTranslation } from "react-i18next";
+
 import style from "./SectionBenefits.module.css";
 
 import oneImg from "./assets/one.png";
@@ -10,37 +12,40 @@ import fiveImg from "./assets/five.png";
 import arrow from "./assets/arrow.svg";
 
 export const SectionBenefits: React.FC = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <section id="forwhom" className={style.benefits}>
       <div className={style.benefits_title}>
-        <span className={style.above_title}>WHAT ARE</span>
+        <span className={style.above_title}>{t("whatare")}</span>
         <h3 className={style.title}>
-          <span className={style.red}>BENEFITS</span> <br /> FOR ME?
+          <span className={style.red}>{t("benefits")}</span> {t("it")}
+          <br /> {t("forme")}
         </h3>
       </div>
 
       <div className={style.hashtags}>
         <div className={style.hashtags_line}>
-          <span className={style.hashtags_item}>#portarit</span>
-          <span className={style.hashtags_item}>#digitalart</span>
-          <span className={style.hashtags_item}>#inpulse</span>
+          <span className={style.hashtags_item}>{t("portarit")}</span>
+          <span className={style.hashtags_item}>{t("digitalart")}</span>
+          <span className={style.hashtags_item}>{t("inpulse")}</span>
         </div>
         <div className={style.hashtags_line}>
-          <span className={style.hashtags_item}>#info</span>
-          <span className={style.hashtags_item}>#some image</span>
+          <span className={style.hashtags_item}>{t("info")}</span>
+          <span className={style.hashtags_item}>{t("some image")}</span>
         </div>
       </div>
 
       <div className={style.pictures}>
-        <Card src={oneImg} number={1} caption="Surprise your customers and create an emotional connection with each of them." />
-        <Card src={twoImg} number={2} caption="Attract new audiences." />
-        <Card src={threeImg} number={3} caption="Communicate your brand values in a way that grabs attention." />
-        <Card src={fourImg} number={4} caption="Explore new digital capabilities." />
-        <Card src={fiveImg} number={5} caption="Be part of a one-of-a-kind artistic statement." />
+        <Card src={oneImg} number={1} caption={`${t("ben_card_one")}`} />
+        <Card src={twoImg} number={2} caption={`${t("ben_card_two")}`} />
+        <Card src={threeImg} number={3} caption={`${t("ben_card_three")}`} />
+        <Card src={fourImg} number={4} caption={`${t("ben_card_four")}`} />
+        <Card src={fiveImg} number={5} caption={`${t("ben_card_five")}`} />
       </div>
 
       <button className={style.button}>
-        <span className={style.button_text}>GET IN TOUCH</span>
+        <span className={style.button_text}>{t("getintouch")}</span>
         <img className={style.button_img} src={arrow} alt="arrow" />
       </button>
     </section>

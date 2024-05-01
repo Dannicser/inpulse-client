@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useTranslation } from "react-i18next";
+
 import { useSpring, animated } from "@react-spring/web";
 
 import logo from "./assets/logo.svg";
@@ -12,6 +14,8 @@ interface ILiquidAnimationProps {
 }
 
 export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) => {
+  const { t, i18n } = useTranslation();
+
   const effect = useSpring({
     loop: true,
     config: { duration: 4000 },
@@ -54,13 +58,16 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
       <div
         className={`${style.circle_explore} xl:w-[8.438rem] xl:h-[8.438rem] lg:w-[7.1rem] lg:h-[7.1rem] md:w-[6.2rem] md:h-[6.2rem] sm:w-[5.8752rem] sm:h-[5.875rem] xs:w-[5.8752rem] xs:h-[5.875rem]  us:w-[5.8752rem] us:h-[5.875rem]`}
       >
-        <div className={style.circle_explore_text}>Explore</div>
+        <div className={style.circle_explore_text}>
+          <div>{t("explore")}</div>
+          <div>{t("explore_more")}</div>
+        </div>
       </div>
       <div className={`${style.title_container} bottom-[1.5rem]`}>
-        <div className={`${style.sub_title_text} font-Involve font-light`}>IN PULSE IS THE PLACE</div>
+        <div className={`${style.sub_title_text} font-Involve font-light`}>{t("pulse_sub_title")}</div>
         <div className={`${style.title_text}`}>
-          WHERE <br /> <span className={`text-[#E11800]`}>DIGITAL ART </span>
-          <br /> COMES TO LIFE
+          {t("where")} <br /> {t("digital")} {t("digital") ? <br /> : ""} <span className={`text-[#E11800]`}>{t("art")} </span>
+          {t("in")} <br /> {t("comes")} {t("reality")}
         </div>
       </div>
       <div

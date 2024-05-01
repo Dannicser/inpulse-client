@@ -120,10 +120,12 @@
 }
 
 .circle_explore_text {
+  text-align: center;
   transform: rotate(-45deg);
   color: #fe1b1c;
   font-family: Involve;
   font-weight: 500;
+  line-height: 15px;
 }
 
 .title_container {
@@ -161,6 +163,11 @@
     font-size: 29px;
     line-height: 35.92px;
   }
+
+  .circle_explore_text {
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
 
 @media (max-width: 868px) {
@@ -179,6 +186,11 @@
   .title_text {
     font-size: 32px;
     margin-top: 10px;
+  }
+
+  .circle_explore_text {
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
