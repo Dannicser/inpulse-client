@@ -55,13 +55,13 @@
   display: grid;
 
   grid-template-areas:
-    "one . three . ."
+    "one . three . five"
     "one two three four five"
     "one two three four five"
     "one two three four five"
     ". two . four five";
 
-  grid-template-columns: 325px 175px 260px 185px 1fr;
+  grid-template-columns: 325px 175px 260px 185px 260px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   overflow-x: auto;
   gap: 64px;
@@ -102,6 +102,9 @@
 .card:nth-child(5) {
   grid-area: five;
   margin-right: 10px;
+
+  height: 402px;
+  margin: auto 0;
 }
 
 .card {
@@ -198,16 +201,24 @@
   /*  grid-template-columns: 1fr 0.7fr;*/
   /*}*/
   .pictures {
-    width: auto;
-    overflow-x: scroll;
-    /* margin-inline: -1.875rem;
-    padding-inline: 1.875rem; */
+    display: grid;
+    grid-template-columns: 325px 175px;
+    grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+          "one two"
+          "three four"
+          "five five";
+    overflow: visible;
+    justify-content: center;
+  }
+  .card:nth-child(1n){
+    height: 302px;
   }
   .card:nth-child(4) {
-    align-self: end;
+    /*align-self: end;*/
   }
   .card:nth-child(5) {
-    align-self: end;
+    /*transform: rotate(90deg);*/
   }
 
   .card:nth-child(3) > .card_img_wrapper {
