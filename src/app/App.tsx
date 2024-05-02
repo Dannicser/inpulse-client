@@ -30,7 +30,7 @@ function App() {
       <Layout classes={`max-lg:hidden xl:mx-[7.5rem] lg:mx-[5.5rem] md:mx-[3.5rem] mt-10`}>
         <SectionDo />
       </Layout>
-      <Layout classes={`xl:mx-[7.5rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[1rem] xs:mx-[1rem] us:mx-[1.875rem] mt-20`}>
+      <Layout classes={`xl:ml-[7.5rem] lg:ml-[5.5rem] md:ml-[3.5rem] sm:ml-[1rem] xs:ml-[1rem] us:ml-[1.875rem] mt-20`}>
         <SectionBenefits />
       </Layout>
 

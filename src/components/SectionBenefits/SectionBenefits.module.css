@@ -9,7 +9,6 @@
     "pictures pictures"
     "button button";
   grid-template-columns: 1fr 1fr;
-  /*grid-template-rows: 1fr 1fr 1fr;*/
 }
 
 .benefits_title {
@@ -54,18 +53,18 @@
   grid-area: pictures;
   margin: 60px 0;
   display: grid;
-  /*grid-template-areas: "one two three four five";*/
+
   grid-template-areas:
     "one . three . ."
     "one two three four five"
     "one two three four five"
     "one two three four five"
     ". two . four five";
-  /*grid-template-columns: 2fr 1.5fr 1.5fr 0.8fr 1fr;*/
+
   grid-template-columns: 325px 175px 260px 185px 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   overflow-x: auto;
-  gap: 63px;
+  gap: 64px;
 }
 
 .pictures::-webkit-scrollbar {
@@ -102,6 +101,7 @@
 }
 .card:nth-child(5) {
   grid-area: five;
+  margin-right: 10px;
 }
 
 .card {
@@ -190,18 +190,18 @@
       "hashtags button";
   }
 
-/*  .pictures {*/
-/*    grid-template-areas:*/
-/*      "one two"*/
-/*      "one four"*/
-/*      "three five";*/
-/*  grid-template-columns: 1fr 0.7fr;*/
-/*}*/
+  /*  .pictures {*/
+  /*    grid-template-areas:*/
+  /*      "one two"*/
+  /*      "one four"*/
+  /*      "three five";*/
+  /*  grid-template-columns: 1fr 0.7fr;*/
+  /*}*/
   .pictures {
     width: auto;
     overflow-x: scroll;
-    margin-inline: -1.875rem;
-    padding-inline: 1.875rem;
+    /* margin-inline: -1.875rem;
+    padding-inline: 1.875rem; */
   }
   .card:nth-child(4) {
     align-self: end;
@@ -211,7 +211,7 @@
   }
 
   .card:nth-child(3) > .card_img_wrapper {
-    height: 400px;
+    /* height: 400px; */
   }
 }
 
@@ -239,8 +239,6 @@
   .pictures {
     width: auto;
     overflow-x: scroll;
-    margin-inline: -1.875rem;
-    padding-inline: 1.875rem;
   }
 }
 
