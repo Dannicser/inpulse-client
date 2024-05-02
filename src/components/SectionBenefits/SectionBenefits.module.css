@@ -107,12 +107,17 @@
   margin: auto 0;
 }
 
+
 .card {
   position: relative;
   width: auto;
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+
+.card_mobile{
+  display: none;
 }
 
 .card_img_wrapper {
@@ -186,6 +191,13 @@
 }
 
 @media (min-width: 490px) and (max-width: 1024px) {
+  .card_desktop{
+    display: none;
+  }
+  .card_mobile{
+    grid-area: five;
+    display: block;
+  }
   .benefits {
     grid-template-areas:
       "title title"
@@ -218,13 +230,15 @@
     /*align-self: end;*/
   }
   .card:nth-child(5) {
-    /*transform: rotate(90deg);*/
+  rotate: 0deg;
   }
 
   .card:nth-child(3) > .card_img_wrapper {
     /* height: 400px; */
   }
 }
+
+
 
 @media (max-width: 490px) {
   .benefits {
