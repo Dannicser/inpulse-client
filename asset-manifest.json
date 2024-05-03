@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pulse/static/css/main.cb91271e.css",
+    "main.css": "/pulse/static/css/main.a950d65a.css",
     "main.js": "/pulse/static/js/main.040df202.js",
     "static/media/tablet.svg": "/pulse/static/media/tablet.a4fe67f5002d924548a3ec5a8320281c.svg",
     "static/media/desktop.svg": "/pulse/static/media/desktop.55b1e1eb8dc9652a7521a6310c83677a.svg",
@@ -28,11 +28,11 @@
     "static/media/telegram.svg": "/pulse/static/media/telegram.f8edd5c6bddcdac357742ddd38a7c214.svg",
     "static/media/experience-icon-1.svg": "/pulse/static/media/experience-icon-1.23ba7e009c2df2feae5fcfccedff89bb.svg",
     "static/media/cross.svg": "/pulse/static/media/cross.2001e956d267bc9b1a2349ee0a8ee521.svg",
-    "main.cb91271e.css.map": "/pulse/static/css/main.cb91271e.css.map",
+    "main.a950d65a.css.map": "/pulse/static/css/main.a950d65a.css.map",
     "main.040df202.js.map": "/pulse/static/js/main.040df202.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb91271e.css",
+    "static/css/main.a950d65a.css",
     "static/js/main.040df202.js"
   ]
 }
