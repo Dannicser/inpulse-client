@@ -19,13 +19,13 @@ export const SectionExperience: React.FC<ISectionExperience> = ({ classes = "" }
   return (
     <section id="we" className={`${classes}`}>
       <div className={`${style.experience_container}`}>
+        {" "}
         <div className={`${style.experience_item}`}>
-          <img src={icon1} alt="" className={`${style.experience_item_image}`} />
-          <h3 className={`${style.experience_item_name} font-Involve font-medium`}>{t("card_one_title")}</h3>
-          <p className={`${style.experience_item_description} ${style.grey} font-Involve font-medium`}>{t("card_one_descr")}</p>
-
+          <img src={icon3} alt="" className={`${style.experience_item_image}`} />
+          <h3 className={`${style.experience_item_name} font-Involve font-medium`}>{t("card_three_title")}</h3>
+          <p className={`${style.experience_item_description} ${style.grey} font-Involve font-medium`}>{t("card_three_descr")}</p>{" "}
           <a href="#contacts" className={`${style.arrow_container} transition-opacity duration-500 hover:opacity-50`}>
-            <img src={arrow} alt="arrow" className={`${style.experience_item_arrow}`} />
+            <img src={arrow} alt="arrow" className={`${style.experience_item_arrow}`} />{" "}
           </a>
         </div>
         <div className={`${style.experience_item}`}>
@@ -37,11 +37,12 @@ export const SectionExperience: React.FC<ISectionExperience> = ({ classes = "" }
           </a>
         </div>
         <div className={`${style.experience_item}`}>
-          <img src={icon3} alt="" className={`${style.experience_item_image}`} />
-          <h3 className={`${style.experience_item_name} font-Involve font-medium`}>{t("card_three_title")}</h3>
-          <p className={`${style.experience_item_description} ${style.grey} font-Involve font-medium`}>{t("card_three_descr")}</p>{" "}
+          <img src={icon1} alt="" className={`${style.experience_item_image}`} />
+          <h3 className={`${style.experience_item_name} font-Involve font-medium`}>{t("card_one_title")}</h3>
+          <p className={`${style.experience_item_description} ${style.grey} font-Involve font-medium`}>{t("card_one_descr")}</p>
+
           <a href="#contacts" className={`${style.arrow_container} transition-opacity duration-500 hover:opacity-50`}>
-            <img src={arrow} alt="arrow" className={`${style.experience_item_arrow}`} />{" "}
+            <img src={arrow} alt="arrow" className={`${style.experience_item_arrow}`} />
           </a>
         </div>
       </div>

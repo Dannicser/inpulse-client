@@ -26,7 +26,6 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
   }, []);
 
   function onGetCurrentWindowWidth(e: any) {
-    console.log(e.target.innerWidth);
     setWidth(e.target.innerWidth);
   }
 
