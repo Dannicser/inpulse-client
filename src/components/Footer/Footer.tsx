@@ -17,6 +17,7 @@ import magic from "./assets/magic.png";
 import s from "./Footer.module.css";
 
 import background from "./assets/background.png";
+import axios from "axios";
 
 export const Footer: React.FC = () => {
   const { t, i18n } = useTranslation();

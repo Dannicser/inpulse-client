@@ -282,7 +282,7 @@
 @media (max-width: 390px) {
   .heart_heart {
     width: 200px;
-    left: 130px;
+    left: 110px;
   }
 
   .social {
@@ -303,10 +303,11 @@
   }
 
   .heart_text {
-    top: 58px;
-    left: 50px;
-    font-size: 27px;
+    top: 60px;
+    left: 30px;
+    font-size: 26px;
     line-height: 36px;
+    font-weight: 600;
   }
 
   .input {

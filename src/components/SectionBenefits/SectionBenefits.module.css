@@ -61,7 +61,7 @@
     "one two three four five"
     ". two . four five";
 
-  grid-template-columns: 325px 175px 260px 185px 260px;
+  grid-template-columns: 325px 175px 260px 185px 130px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   overflow-x: auto;
   gap: 64px;
@@ -107,7 +107,6 @@
   margin: auto 0;
 }
 
-
 .card {
   position: relative;
   width: auto;
@@ -116,7 +115,7 @@
   gap: 18px;
 }
 
-.card_mobile{
+.card_mobile {
   display: none;
 }
 
@@ -190,11 +189,11 @@
   border-radius: 50%;
 }
 
-@media (min-width: 490px) and (max-width: 1024px) {
-  .card_desktop{
+@media (min-width: 640px) and (max-width: 1024px) {
+  .card_desktop {
     display: none;
   }
-  .card_mobile{
+  .card_mobile {
     grid-area: five;
     display: block;
   }
@@ -205,42 +204,71 @@
       "hashtags button";
   }
 
-  /*  .pictures {*/
-  /*    grid-template-areas:*/
-  /*      "one two"*/
-  /*      "one four"*/
-  /*      "three five";*/
-  /*  grid-template-columns: 1fr 0.7fr;*/
-  /*}*/
   .pictures {
     display: grid;
     grid-template-columns: 325px 175px;
     grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-          "one two"
-          "three four"
-          "five five";
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five five";
     overflow: visible;
     justify-content: center;
   }
-  .card:nth-child(1n){
+  .card:nth-child(1n) {
     height: 302px;
   }
-  .card:nth-child(4) {
-    /*align-self: end;*/
-  }
-  .card:nth-child(5) {
-  rotate: 0deg;
-  }
 
-  .card:nth-child(3) > .card_img_wrapper {
-    /* height: 400px; */
+  .card:nth-child(5) {
+    rotate: 0deg;
   }
 }
 
+@media (min-width: 550px) and (max-width: 640px) {
+  .card_desktop {
+    display: none;
+  }
+  .card_mobile {
+    grid-area: five;
+    display: block;
+  }
+  .benefits {
+    grid-template-areas:
+      "title title"
+      "pictures pictures"
+      "hashtags button";
+  }
 
+  .benefits_title {
+    margin-left: 3%;
+  }
 
-@media (max-width: 490px) {
+  .pictures {
+    display: grid;
+    grid-template-columns: 300px 175px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five five";
+    overflow: visible;
+    justify-content: center;
+  }
+
+  .card:nth-child(1n) {
+    height: 302px;
+  }
+
+  .card:nth-child(5) {
+    rotate: 0deg;
+  }
+
+  .hashtags {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 550px) {
   .benefits {
     grid-template-areas:
       "title"
@@ -250,25 +278,43 @@
     grid-template-columns: 100%;
   }
 
+  .benefits_title {
+    margin-left: 20px;
+  }
+
   .title {
     font-size: 44px;
     line-height: 45px;
   }
+
   .above_title {
     font-size: 14px;
   }
   .hashtags {
     margin-right: auto;
     margin-top: 20px;
+    margin-left: 20px;
   }
   .pictures {
     width: auto;
     overflow-x: scroll;
   }
+
+  .card:nth-child(1) {
+    margin-left: 20px;
+  }
+
+  .card:nth-child(5) {
+    margin-right: 20px;
+  }
+
+  .pictures {
+    grid-template-columns: 325px 175px 260px 185px 150px;
+  }
 }
 
 @media (max-width: 380px) {
   .hashtags_item {
-    padding: 2px;
+    padding: 6px;
   }
 }
