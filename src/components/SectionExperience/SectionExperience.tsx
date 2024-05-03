@@ -24,25 +24,25 @@ export const SectionExperience: React.FC<ISectionExperience> = ({ classes = "" }
           <h3 className={`${style.experience_item_name} font-Involve font-medium`}>{t("card_one_title")}</h3>
           <p className={`${style.experience_item_description} ${style.grey} font-Involve font-medium`}>{t("card_one_descr")}</p>
 
-          <div className={style.arrow_container}>
+          <a href="#contacts" className={`${style.arrow_container} transition-opacity duration-500 hover:opacity-50`}>
             <img src={arrow} alt="arrow" className={`${style.experience_item_arrow}`} />
-          </div>
+          </a>
         </div>
         <div className={`${style.experience_item}`}>
           <img src={icon2} alt="" className={`${style.experience_item_image}`} />
           <h3 className={`${style.experience_item_name} font-Involve font-medium`}>{t("card_two_title")}</h3>
           <p className={`${style.experience_item_description} ${style.grey} font-Involve font-medium`}>{t("card_two_descr")}</p>{" "}
-          <div className={style.arrow_container}>
+          <a href="#contacts" className={`${style.arrow_container} transition-opacity duration-500 hover:opacity-50`}>
             <img src={arrow} alt="arrow" className={`${style.experience_item_arrow}`} />
-          </div>
+          </a>
         </div>
         <div className={`${style.experience_item}`}>
           <img src={icon3} alt="" className={`${style.experience_item_image}`} />
           <h3 className={`${style.experience_item_name} font-Involve font-medium`}>{t("card_three_title")}</h3>
           <p className={`${style.experience_item_description} ${style.grey} font-Involve font-medium`}>{t("card_three_descr")}</p>{" "}
-          <div className={style.arrow_container}>
+          <a href="#contacts" className={`${style.arrow_container} transition-opacity duration-500 hover:opacity-50`}>
             <img src={arrow} alt="arrow" className={`${style.experience_item_arrow}`} />{" "}
-          </div>
+          </a>
         </div>
       </div>
     </section>

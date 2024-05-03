@@ -24,13 +24,13 @@ function App() {
       <TextSlider classes={`mt-[1rem]`} />
       {/* <Slider classes={`mt-[2rem]`} /> */}
       <TitleDivider classes={`mt-[3rem]`} />
-      <Layout classes="xl:mx-[10rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[1rem] xs:mx-[1rem] us:mx-[1.875rem]">
+      <Layout classes="xl:mx-[10rem] lg:mx-[5.5rem] md:mx-[3.5rem]">
         <SectionExperience />
       </Layout>
       <Layout classes={`max-lg:hidden xl:mx-[7.5rem] lg:mx-[5.5rem] md:mx-[3.5rem] mt-10`}>
         <SectionDo />
       </Layout>
-      <Layout classes={`xl:ml-[7.5rem] lg:ml-[5.5rem] md:ml-[3.5rem] sm:ml-[1rem] xs:ml-[1rem] us:ml-[1.875rem] mt-20`}>
+      <Layout classes={`xl:mx-[0rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[2rem] us:ml-[0rem] mt-20`}>
         <SectionBenefits />
       </Layout>
 
