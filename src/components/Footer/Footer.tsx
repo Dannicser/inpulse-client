@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import { useTranslation } from "react-i18next";
 
 import { Layout } from "../Layout/Layout";
@@ -12,15 +13,29 @@ import instagram from "./assets/instagram.svg";
 import linkedIn from "./assets/linkedln.svg";
 import telegram from "./assets/telegram.svg";
 import twitter from "./assets/twitter.svg";
-import magic from "./assets/magic.png";
 
 import s from "./Footer.module.css";
 
 import background from "./assets/background.png";
-import axios from "axios";
 
 export const Footer: React.FC = () => {
   const { t, i18n } = useTranslation();
+
+  const [input, setInput] = useState("");
+
+  async function sendText(e: React.MouseEvent<HTMLElement>) {
+    try {
+      e.preventDefault();
+
+      await axios.post("http://localhost:5000/api/email", {
+        text: input,
+      });
+
+      setInput("");
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <footer id={"contacts"} className={`${s.footer} mb-3`}>
@@ -64,8 +79,14 @@ export const Footer: React.FC = () => {
             </div>
 
             <form className={s.form}>
-              <Input />
-              <button className={`${s.form_button} transition-opacity duration-500 hover:opacity-70`}>{t("send")}</button>
+              <input className={s.input} type="text" placeholder={t("share_story")} value={input} onChange={(e) => setInput(e.target.value)} />
+              <button
+                disabled={input.length ? false : true}
+                onClick={sendText}
+                className={`${s.form_button} transition-opacity duration-500 hover:opacity-70`}
+              >
+                {t("send")}
+              </button>
             </form>
           </div>
 
@@ -91,12 +112,4 @@ export const Footer: React.FC = () => {
       </div>
     </footer>
   );
-};
-
-const Input: React.FC = () => {
-  const { t, i18n } = useTranslation();
-
-  const [input, setInput] = useState("");
-
-  return <input className={s.input} type="text" placeholder={t("share_story")} value={input} onChange={(e) => setInput(e.target.value)} />;
 };
