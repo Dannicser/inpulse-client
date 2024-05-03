@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/pulse/static/css/main.156ccaf8.css",
-    "main.js": "/pulse/static/js/main.32eaebb7.js",
+    "main.css": "/pulse/static/css/main.e45df493.css",
+    "main.js": "/pulse/static/js/main.040df202.js",
     "static/media/tablet.svg": "/pulse/static/media/tablet.a4fe67f5002d924548a3ec5a8320281c.svg",
     "static/media/desktop.svg": "/pulse/static/media/desktop.55b1e1eb8dc9652a7521a6310c83677a.svg",
     "static/media/mobile.svg": "/pulse/static/media/mobile.d421085a7056a3d06e2104e9d4c533e4.svg",
+    "static/media/five_mobile.png": "/pulse/static/media/five_mobile.62f9c7a0de1b2e6d1fca.png",
     "static/media/background.png": "/pulse/static/media/background.52cafee65b318170a62c.png",
     "static/media/one.png": "/pulse/static/media/one.119136ee55067ec578b3.png",
     "static/media/three.png": "/pulse/static/media/three.8ec00c4074c1808d73a0.png",
@@ -27,11 +28,11 @@
     "static/media/telegram.svg": "/pulse/static/media/telegram.f8edd5c6bddcdac357742ddd38a7c214.svg",
     "static/media/experience-icon-1.svg": "/pulse/static/media/experience-icon-1.23ba7e009c2df2feae5fcfccedff89bb.svg",
     "static/media/cross.svg": "/pulse/static/media/cross.2001e956d267bc9b1a2349ee0a8ee521.svg",
-    "main.156ccaf8.css.map": "/pulse/static/css/main.156ccaf8.css.map",
-    "main.32eaebb7.js.map": "/pulse/static/js/main.32eaebb7.js.map"
+    "main.e45df493.css.map": "/pulse/static/css/main.e45df493.css.map",
+    "main.040df202.js.map": "/pulse/static/js/main.040df202.js.map"
   },
   "entrypoints": [
-    "static/css/main.156ccaf8.css",
-    "static/js/main.32eaebb7.js"
+    "static/css/main.e45df493.css",
+    "static/js/main.040df202.js"
   ]
 }
