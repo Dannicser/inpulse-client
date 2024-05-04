@@ -94,6 +94,11 @@
     margin-top: 10px;
   }
 
+  .circle_explore_text {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
   .title_text_ru {
     font-size: 30px;
     line-height: 30px;
@@ -274,6 +279,11 @@
     line-height: 32.92px;
   }
 
+  .circle_explore_text {
+    font-size: 11px;
+    line-height: 10px;
+  }
+
   .title_text_ru {
     font-size: 30px;
     line-height: 30px;
@@ -328,6 +338,11 @@
     width: 70px;
     height: 70px;
   }
+
+  .circle_explore_text {
+    font-size: 10px;
+    line-height: 10px;
+  }
 }
 
 @media (max-width: 370px) {
@@ -353,6 +368,11 @@
   .circle_explore {
     width: 60px;
     height: 60px;
+  }
+
+  .circle_explore_text {
+    font-size: 8px;
+    line-height: 8px;
   }
 
   .title_text_ru {
