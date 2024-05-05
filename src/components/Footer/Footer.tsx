@@ -55,16 +55,16 @@ export const Footer: React.FC = () => {
                 <br /> {t("story_bottom")}
               </div>
               <div className={s.social_media}>
-                <a href="#">
+                <a target="_blank" href="https://instagram.com/inpulsenow">
                   <img src={instagram} alt="inst" />
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://linkedin.com/company/inpulsenow">
                   <img src={linkedIn} alt="linkedIn" />
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://t.me/inpulsenow">
                   <img src={telegram} alt="telegram" />
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://x.com/inpulsenow">
                   <img src={twitter} alt="twitter" />
                 </a>
               </div>
