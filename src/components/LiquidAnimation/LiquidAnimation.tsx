@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import bg_image_desk from "./assets/desktop.png";
-import bg_image_tablet from "./assets/desktop.png";
+import bg_image_tablet from "./assets/tablet.png";
 import bg_image_mobile from "./assets/mobile.png";
 
 import style from "./LiquidAnimation.module.css";

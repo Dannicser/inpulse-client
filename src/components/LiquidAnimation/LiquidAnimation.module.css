@@ -158,6 +158,11 @@
   .circle_explore {
     width: 90px;
     height: 90px;
+    top: 5px;
+  }
+
+  .circle_explore_text {
+    font-size: 12px;
   }
 }
 
@@ -218,6 +223,9 @@
     width: 90px;
     height: 90px;
   }
+  .circle_explore_text {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 581px) {
@@ -253,7 +261,7 @@
     width: 94px;
     height: 94px;
     right: 15px;
-    top: 15px;
+    top: 10px;
   }
 
   .title_text {
