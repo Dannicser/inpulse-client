@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/inpulse-client/static/css/main.78b7a945.css",
-    "main.js": "/inpulse-client/static/js/main.f184d578.js",
+    "main.js": "/inpulse-client/static/js/main.ebb4ece5.js",
     "static/media/desktop.png": "/inpulse-client/static/media/desktop.00492929a0c7f76d16be.png",
     "static/media/tablet.png": "/inpulse-client/static/media/tablet.84950c95e28993f84d6f.png",
     "static/media/mobile.png": "/inpulse-client/static/media/mobile.9c2f6561d8818f49d76a.png",
@@ -29,10 +29,10 @@
     "static/media/experience-icon-1.svg": "/inpulse-client/static/media/experience-icon-1.23ba7e009c2df2feae5fcfccedff89bb.svg",
     "static/media/cross.svg": "/inpulse-client/static/media/cross.2001e956d267bc9b1a2349ee0a8ee521.svg",
     "main.78b7a945.css.map": "/inpulse-client/static/css/main.78b7a945.css.map",
-    "main.f184d578.js.map": "/inpulse-client/static/js/main.f184d578.js.map"
+    "main.ebb4ece5.js.map": "/inpulse-client/static/js/main.ebb4ece5.js.map"
   },
   "entrypoints": [
     "static/css/main.78b7a945.css",
-    "static/js/main.f184d578.js"
+    "static/js/main.ebb4ece5.js"
   ]
 }
