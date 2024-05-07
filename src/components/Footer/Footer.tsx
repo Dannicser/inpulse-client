@@ -49,7 +49,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className={s.social}>
-              <img className={s.social_logo} src={logo} alt="logo" />
+              {/* <img className={s.social_logo} src={logo} alt="logo" /> */}
               <div className={s.social_text}>
                 {t("story_up")}
                 <br /> {t("story_bottom")}
@@ -64,7 +64,7 @@ export const Footer: React.FC = () => {
                 <a target="_blank" href="https://t.me/inpulsenow">
                   <img src={telegram} alt="telegram" />
                 </a>
-                <a target="_blank" href="https://x.com/inpulsenow">
+                <a target="_blank" href="">
                   <img src={twitter} alt="twitter" />
                 </a>
               </div>
