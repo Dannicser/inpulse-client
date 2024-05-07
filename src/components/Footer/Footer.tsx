@@ -21,17 +21,28 @@ import background from "./assets/background.png";
 export const Footer: React.FC = () => {
   const { t, i18n } = useTranslation();
 
-  const [input, setInput] = useState("");
+  const [text, setText] = useState<string>("");
 
   async function sendText(e: React.MouseEvent<HTMLElement>) {
     try {
       e.preventDefault();
 
-      await axios.post("http://localhost:5000/api/email", {
-        text: input,
-      });
+      await axios.post(
+        "https://api.mailopost.ru/v1/email/messages",
+        {
+          from_email: "qwrerty2016@gmail.com",
+          to: "qwrerty2016@gmail.com",
+          subject: "In Pulse",
+          text,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
-      setInput("");
+      setText("");
     } catch (error) {
       console.log(error);
     }
@@ -79,9 +90,9 @@ export const Footer: React.FC = () => {
             </div>
 
             <form className={s.form}>
-              <input className={s.input} type="text" placeholder={t("share_story")} value={input} onChange={(e) => setInput(e.target.value)} />
+              <input className={s.input} type="text" placeholder={t("share_story")} value={text} onChange={(e) => setText(e.target.value)} />
               <button
-                disabled={input.length ? false : true}
+                disabled={text.length ? false : true}
                 onClick={sendText}
                 className={`${s.form_button} transition-opacity duration-500 hover:opacity-70`}
               >
