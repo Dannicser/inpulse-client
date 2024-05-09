@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
                 <a target="_blank" href="https://t.me/inpulsenow">
                   <img src={telegram} alt="telegram" />
                 </a>
-                <a target="_blank" href="">
+                <a target="_blank" href="https://x.com/inpulsenow">
                   <img src={twitter} alt="twitter" />
                 </a>
               </div>
