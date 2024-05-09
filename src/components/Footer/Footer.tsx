@@ -27,21 +27,6 @@ export const Footer: React.FC = () => {
     try {
       e.preventDefault();
 
-      await axios.post(
-        "https://api.mailopost.ru/v1/email/messages",
-        {
-          from_email: "qwrerty2016@gmail.com",
-          to: "qwrerty2016@gmail.com",
-          subject: "In Pulse",
-          text,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
       setText("");
     } catch (error) {
       console.log(error);
