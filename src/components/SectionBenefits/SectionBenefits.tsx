@@ -9,7 +9,7 @@ import twoImg from "./assets/two.png";
 import threeImg from "./assets/three.png";
 import fourImg from "./assets/four.png";
 import fiveImg from "./assets/five.png";
-// import fiveImgMobile from "./assets/five_mobile.png";
+import fiveTabletImg from "./assets/five_tablet.png";
 import arrow from "./assets/arrow.svg";
 
 export const SectionBenefits: React.FC = () => {
@@ -43,7 +43,7 @@ export const SectionBenefits: React.FC = () => {
         <Card src={threeImg} number={3} caption={`${t("ben_card_three")}`} />
         <Card src={fourImg} number={4} caption={`${t("ben_card_four")}`} />
         <Card src={fiveImg} number={5} caption={`${t("ben_card_five")}`} classes={style.card_desktop} />
-        {/* <Card src={fourImg} number={5} caption={`${t("ben_card_five")}`} classes={style.card_mobile} /> */}
+        <Card src={fiveTabletImg} number={5} caption={`${t("ben_card_five")}`} classes={style.card_mobile} />
       </div>
 
       <button className={style.button}>
