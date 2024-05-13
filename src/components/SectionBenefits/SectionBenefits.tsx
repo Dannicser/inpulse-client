@@ -9,7 +9,7 @@ import twoImg from "./assets/two.png";
 import threeImg from "./assets/three.png";
 import fourImg from "./assets/four.png";
 import fiveImg from "./assets/five.png";
-import fiveImgMobile from "./assets/five_mobile.png";
+// import fiveImgMobile from "./assets/five_mobile.png";
 import arrow from "./assets/arrow.svg";
 
 export const SectionBenefits: React.FC = () => {
@@ -43,7 +43,7 @@ export const SectionBenefits: React.FC = () => {
         <Card src={threeImg} number={3} caption={`${t("ben_card_three")}`} />
         <Card src={fourImg} number={4} caption={`${t("ben_card_four")}`} />
         <Card src={fiveImg} number={5} caption={`${t("ben_card_five")}`} classes={style.card_desktop} />
-        <Card src={fiveImgMobile} number={5} caption={`${t("ben_card_five")}`} classes={style.card_mobile} />
+        {/* <Card src={fourImg} number={5} caption={`${t("ben_card_five")}`} classes={style.card_mobile} /> */}
       </div>
 
       <button className={style.button}>
@@ -64,12 +64,6 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ src, caption, number, classes }) => {
   return (
     <div className={`${style.card} ${classes}`}>
-      <div style={{ left: number === 1 ? 13 : "auto" }} className={style.number_border}>
-        <div className={style.number_circle}>
-          <span className={style.number}>{number}</span>
-        </div>
-      </div>
-
       <div className={style.card_img_wrapper}>
         <img className={style.card_img} src={src} alt={number + " photo"} />
       </div>
