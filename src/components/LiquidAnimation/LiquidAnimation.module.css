@@ -7,6 +7,7 @@
 }
 
 .circle_explore {
+  cursor: url("./assets/lock.svg"), auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +16,6 @@
   top: 10px;
   right: 0;
   border-radius: 50%;
-
   width: 134px;
   height: 134px;
 }
