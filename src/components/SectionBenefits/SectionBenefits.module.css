@@ -63,7 +63,7 @@
 
   grid-template-columns: 325px 175px 260px 185px 130px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   gap: 64px;
 }
 
@@ -189,6 +189,12 @@
   border-radius: 50%;
 }
 
+@media (max-width: 1482px) {
+  .pictures {
+    overflow-x: auto;
+  }
+}
+
 @media (min-width: 640px) and (max-width: 1024px) {
   .card_desktop {
     display: none;
@@ -196,6 +202,10 @@
   .card_mobile {
     grid-area: five;
     display: block;
+  }
+
+  .card_mobile .card_caption {
+    margin-top: 20px;
   }
   .benefits {
     grid-template-areas:
@@ -232,6 +242,11 @@
     grid-area: five;
     display: block;
   }
+
+  .card_mobile .card_caption {
+    margin-top: 20px;
+  }
+
   .benefits {
     grid-template-areas:
       "title title"

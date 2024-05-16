@@ -52,12 +52,12 @@
   animation-timing-function: linear;
   -webkit-animation-name: ticker;
   animation-name: ticker;
-  -webkit-animation-duration: 20s;
-  animation-duration: 20s;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
 }
 
 .ticker__item {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .ticker__item span {
