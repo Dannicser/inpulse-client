@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/inpulse-client/static/css/main.8b26f2d5.css",
-    "main.js": "/inpulse-client/static/js/main.af6c74cb.js",
+    "main.css": "/inpulse-client/static/css/main.5ad0a9a0.css",
+    "main.js": "/inpulse-client/static/js/main.ee5d470b.js",
     "static/media/desktop.png": "/inpulse-client/static/media/desktop.00492929a0c7f76d16be.png",
     "static/media/one.png": "/inpulse-client/static/media/one.726508076b85d70ccf2a.png",
     "static/media/tablet.png": "/inpulse-client/static/media/tablet.84950c95e28993f84d6f.png",
@@ -25,15 +25,15 @@
     "static/media/linkedln.svg": "/inpulse-client/static/media/linkedln.f315a60f383b8c3de6e6194698e3a710.svg",
     "static/media/experience-icon-3.svg": "/inpulse-client/static/media/experience-icon-3.f38e766a5d36296c17241f6357bfde1e.svg",
     "index.html": "/inpulse-client/index.html",
-    "static/media/lock.svg": "/inpulse-client/static/media/lock.ef4670f7720a0734b7b7.svg",
+    "static/media/lock.svg": "/inpulse-client/static/media/lock.2315b889fd24d7b5ac9c.svg",
     "static/media/telegram.svg": "/inpulse-client/static/media/telegram.f8edd5c6bddcdac357742ddd38a7c214.svg",
     "static/media/experience-icon-1.svg": "/inpulse-client/static/media/experience-icon-1.23ba7e009c2df2feae5fcfccedff89bb.svg",
     "static/media/cross.svg": "/inpulse-client/static/media/cross.2001e956d267bc9b1a2349ee0a8ee521.svg",
-    "main.8b26f2d5.css.map": "/inpulse-client/static/css/main.8b26f2d5.css.map",
-    "main.af6c74cb.js.map": "/inpulse-client/static/js/main.af6c74cb.js.map"
+    "main.5ad0a9a0.css.map": "/inpulse-client/static/css/main.5ad0a9a0.css.map",
+    "main.ee5d470b.js.map": "/inpulse-client/static/js/main.ee5d470b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b26f2d5.css",
-    "static/js/main.af6c74cb.js"
+    "static/css/main.5ad0a9a0.css",
+    "static/js/main.ee5d470b.js"
   ]
 }
