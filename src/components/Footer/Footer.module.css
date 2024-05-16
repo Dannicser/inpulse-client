@@ -280,6 +280,10 @@
   .email_content {
     font-size: 14px;
   }
+
+  .input {
+    width: 70%;
+  }
 }
 
 @media (max-width: 390px) {

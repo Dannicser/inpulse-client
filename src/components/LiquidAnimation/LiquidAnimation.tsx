@@ -46,7 +46,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
       <img src={selectBackground()} className={`${style.bg_image}`} />
 
       <div className={`${style.circle_explore}`}>
-        <div className={style.circle_explore_text}>
+        <div className={`${style.circle_explore_text}`}>
           <div>{t("explore")}</div>
           <div>{t("explore_more")}</div>
         </div>

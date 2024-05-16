@@ -66,7 +66,8 @@ export const HeaderBurger: React.FC<IHeaderBurgerProps> = ({ classes = "", activ
 
   return (
     <>
-      <div className={`${style.burger_inner}  ${active ? style.burger_inner_active : null}`}>
+      <div className={`${active ? style.burger_background : ""}`}></div>
+      <div className={`${style.burger_inner} ${active ? style.burger_inner_active : style.burger_inner_inactive}`}>
         <ul className={`${style.list}`}>
           {links.map((item) => {
             return (

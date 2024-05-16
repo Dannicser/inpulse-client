@@ -5,6 +5,25 @@
 
 .burger_inner_active {
   display: block;
+  animation: open 2s;
+}
+
+.burger_inner_inactive {
+  animation: close 0.5s linear;
+}
+
+.burger_background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("../LiquidAnimation/assets/tablet.png");
+  background-size: cover;
+  background-position: top;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  filter: blur(35px);
+  z-index: -1;
+  opacity: 0.7;
 }
 
 .active {
@@ -52,6 +71,16 @@
   }
 }
 
+@media (max-width: 530px) {
+  .burger_background {
+    background-image: url("../LiquidAnimation/assets/mobile.png");
+    background-position: top;
+    background-size: 70%;
+    right: 0;
+    filter: blur(35px);
+  }
+}
+
 @media (max-height: 450px) {
   .list {
     flex-direction: row;
@@ -77,5 +106,26 @@
   .copy_wrights {
     text-align: center;
     margin-top: 100px;
+  }
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes close {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: block;
   }
 }

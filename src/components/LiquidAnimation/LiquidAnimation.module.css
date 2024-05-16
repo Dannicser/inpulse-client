@@ -18,6 +18,17 @@
   border-radius: 50%;
   width: 134px;
   height: 134px;
+  transition: 0.5s;
+}
+
+.circle_explore:hover {
+  background-color: #fe1b1c;
+  transition: 0.5s;
+}
+
+.circle_explore:hover .circle_explore_text {
+  transition: 0.5s;
+  color: white;
 }
 
 .circle_explore_text {
@@ -30,6 +41,7 @@
   font-family: Involve;
   font-weight: 1000;
   line-height: 20px;
+  transition: 0.5s;
 }
 
 .title_container {

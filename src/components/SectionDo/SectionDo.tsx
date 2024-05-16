@@ -9,30 +9,7 @@ interface ISectionDo {
 }
 
 export const SectionDo: React.FC<ISectionDo> = ({ classes = "" }) => {
-  const [isEffect, setIsEffect] = useState(false);
-
   const { t, i18n } = useTranslation();
-
-  const timer = useRef(null) as MutableRefObject<any>;
-
-  useEffect(() => {
-    window.addEventListener("scroll", useAddEffect);
-
-    return () => {
-      window.removeEventListener("scroll", useAddEffect);
-    };
-  }, []);
-
-  function useAddEffect() {
-    if (timer.current) {
-      setIsEffect(true);
-      clearTimeout(timer.current);
-    }
-
-    timer.current = setTimeout(() => {
-      setIsEffect(false);
-    }, 1000);
-  }
 
   return (
     <section className={`${classes}`} id={`${style.do}`}>
@@ -46,7 +23,7 @@ export const SectionDo: React.FC<ISectionDo> = ({ classes = "" }) => {
         <span className={`${style.do_hashtag}`}>
           <span>{t("motto")}</span>
         </span>
-        <div className={`${style.do_info} ${isEffect ? `opacity-60` : `opacity-100`} transition-opacity duration-1000 font-Involve font-medium`}>
+        <div className={`${style.do_info} font-Involve font-medium`}>
           <p className={`${style.description}`}>
             {t("do_text_up_left")}
             <span> {t("do_text_up_right")}</span>
