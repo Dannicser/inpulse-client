@@ -53,7 +53,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
       </div>
       <div className={`${style.title_container} bottom-[0.5rem]`}>
         <div className={`${style.sub_title_text} font-Involve font-light`}>
-          <span>{t("in_pulse_en")}</span> <span className={`max-md:hidden`}>{t("in_pulse_ru")} </span>
+          <span>{t("in_pulse_en")}</span> <span>{t("in_pulse_ru")} </span>
           {t("pulse_sub_title_ru")}
         </div>
         <div className={`${style.title_text} ${i18n.language === "ru" ? style.title_text_ru : ""} `}>
