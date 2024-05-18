@@ -11,11 +11,18 @@ export const TextSlider: React.FC<ITextSlider> = ({ classes = "" }) => {
 
   return (
     <div className={`${style.TextSlider} ${classes} `}>
-      <div className={`${style.ticker_wrap}`}>
-        <div className={`${style.ticker}`}>
-          <div className={`${style.ticker__item}`}>
-            {t("ticker_left")} <span>{t("ticker_span")}</span> {t("ticker_right")}
-          </div>
+      <div className={style.ticker_wrap}>
+        <div className={style.ticker}>
+          <span className={style.item_collection}>
+            <span className={style.item}>
+              {t("ticker_left")} <span>{t("ticker_span")}</span> {t("ticker_right")}
+            </span>
+          </span>
+          <span>
+            <span className={style.item}>
+              {t("ticker_left")} <span className={style.ticker_highlight}>{t("ticker_span")}</span> {t("ticker_right")}
+            </span>
+          </span>
         </div>
       </div>
     </div>
