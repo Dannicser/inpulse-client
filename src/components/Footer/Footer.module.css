@@ -102,14 +102,16 @@
   display: flex;
   justify-content: space-between;
   padding-block: 9px;
-  padding: 10px 10px 10px 30px;
+  padding: 10px 10px 10px 0px;
   gap: 10px;
   border-radius: 168px;
-  border: 1px solid #c5cfe3;
+  /* border: 1px solid #c5cfe3; */
   font-family: Gilroy, Unbounded, sans-serif !important;
 }
 
 .form_button {
+  display: flex;
+  justify-content: center;
   width: 180px;
   padding-block: 10px;
   border-radius: 50px;

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
+
 import { useTranslation } from "react-i18next";
 
 import { Layout } from "../Layout/Layout";
@@ -21,18 +21,6 @@ import background from "./assets/background.png";
 export const Footer: React.FC = () => {
   const { t, i18n } = useTranslation();
 
-  const [text, setText] = useState<string>("");
-
-  async function sendText(e: React.MouseEvent<HTMLElement>) {
-    try {
-      e.preventDefault();
-
-      setText("");
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
   return (
     <footer id={"contacts"} className={`${s.footer} mb-3`}>
       <div className={s.footer_top} style={{ backgroundImage: `url(${vector})` }}>
@@ -45,7 +33,6 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className={s.social}>
-              {/* <img className={s.social_logo} src={logo} alt="logo" /> */}
               <div className={s.social_text}>
                 {t("story_up")}
                 <br /> {t("story_bottom")}
@@ -75,14 +62,12 @@ export const Footer: React.FC = () => {
             </div>
 
             <form className={s.form}>
-              <input className={s.input} type="text" placeholder={t("share_story")} value={text} onChange={(e) => setText(e.target.value)} />
-              <button
-                disabled={text.length ? false : true}
-                onClick={sendText}
+              <a
+                href="mailto:magic@inpulse.events?subject=In Pulse Brand Inquiry&body=hi%0D%0Ahi"
                 className={`${s.form_button} transition-opacity duration-500 hover:opacity-70`}
               >
                 {t("send")}
-              </button>
+              </a>
             </form>
           </div>
 
