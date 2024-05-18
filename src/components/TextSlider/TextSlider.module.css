@@ -35,7 +35,7 @@
 .ticker {
   display: inline-block;
   margin-top: 5px;
-  animation: marquee 50s linear infinite;
+  animation: marquee 60s linear infinite;
 }
 
 .ticker_highlight {
@@ -45,7 +45,7 @@
 .item_collection {
   position: relative;
   left: 0%;
-  animation: swap 50s linear infinite;
+  animation: swap 60s linear infinite;
 }
 
 .item {

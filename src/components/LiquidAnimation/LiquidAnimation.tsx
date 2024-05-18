@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import bg_image_desk from "./assets/desktop.png";
 import bg_image_tablet from "./assets/tablet.png";
 import bg_image_mobile from "./assets/mobile.png";
+import lock from "./assets/lock.svg";
 
 import style from "./LiquidAnimation.module.css";
 
@@ -49,7 +50,8 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
         <div className={`${style.circle_explore_text}`}>
           <div>{t("explore")}</div>
           <div>{t("explore_more")}</div>
-        </div>
+        </div>{" "}
+        <img src={lock} className={style.circle_explore_lock} alt="" />
       </div>
       <div className={`${style.title_container} bottom-[0.5rem]`}>
         <div className={`${style.sub_title_text} font-Involve font-light`}>
