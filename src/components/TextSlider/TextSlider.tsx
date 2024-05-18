@@ -15,7 +15,7 @@ export const TextSlider: React.FC<ITextSlider> = ({ classes = "" }) => {
         <div className={style.ticker}>
           <span className={style.item_collection}>
             <span className={style.item}>
-              {t("ticker_left")} <span>{t("ticker_span")}</span> {t("ticker_right")}
+              {t("ticker_left")} <span className={style.ticker_highlight}>{t("ticker_span")}</span> {t("ticker_right")}
             </span>
           </span>
           <span>
