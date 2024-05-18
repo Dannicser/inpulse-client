@@ -7,7 +7,6 @@
 }
 
 .circle_explore {
-  cursor: url("./assets/lock.svg"), auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,11 +18,24 @@
   width: 134px;
   height: 134px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .circle_explore:hover {
   background-color: #fe1b1c;
   transition: 0.5s;
+
+  .circle_explore_text {
+    display: none;
+  }
+
+  .circle_explore_lock {
+    display: block;
+  }
+}
+
+.circle_explore_lock {
+  display: none;
 }
 
 .circle_explore:hover .circle_explore_text {
