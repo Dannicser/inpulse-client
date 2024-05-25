@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.356ca728.css",
-    "main.js": "/static/js/main.ac7f77fa.js",
+    "main.css": "/static/css/main.46b3098f.css",
+    "main.js": "/static/js/main.0aa46702.js",
     "static/media/one.png": "/static/media/one.726508076b85d70ccf2a.png",
     "static/media/three.png": "/static/media/three.260ed3b3d999a70dfab4.png",
     "static/media/desktop.png": "/static/media/desktop.f6bac91a3fb3da154739.png",
@@ -19,7 +19,7 @@
     "static/media/roadradio_bold.otf": "/static/media/roadradio_bold.cdfd284aa66f33967ed5.otf",
     "static/media/logo.svg": "/static/media/logo.26ee9609417b2483c7dfcd92241637a1.svg",
     "static/media/arrow.svg": "/static/media/arrow.0642c57f2aa345beee840bd4466e556d.svg",
-    "static/media/instagram.svg": "/static/media/instagram.7956c932c852a1dcc4c83aef57499611.svg",
+    "static/media/instagram.svg": "/static/media/instagram.fabb931426fc691286f3909dad6144ea.svg",
     "static/media/experience-icon-2.svg": "/static/media/experience-icon-2.3886b070f2a47d0ad315364fb3e59e52.svg",
     "static/media/twitter.svg": "/static/media/twitter.8454f81d9ca8329b1844f0fee69cd5c2.svg",
     "static/media/linkedln.svg": "/static/media/linkedln.f315a60f383b8c3de6e6194698e3a710.svg",
@@ -28,12 +28,13 @@
     "static/media/lock.svg": "/static/media/lock.2315b889fd24d7b5ac9ca1d193157259.svg",
     "static/media/telegram.svg": "/static/media/telegram.f8edd5c6bddcdac357742ddd38a7c214.svg",
     "static/media/experience-icon-1.svg": "/static/media/experience-icon-1.23ba7e009c2df2feae5fcfccedff89bb.svg",
+    "static/media/tiktok.svg": "/static/media/tiktok.78e84ff436da474aab4455e511260afa.svg",
     "static/media/cross.svg": "/static/media/cross.2001e956d267bc9b1a2349ee0a8ee521.svg",
-    "main.356ca728.css.map": "/static/css/main.356ca728.css.map",
-    "main.ac7f77fa.js.map": "/static/js/main.ac7f77fa.js.map"
+    "main.46b3098f.css.map": "/static/css/main.46b3098f.css.map",
+    "main.0aa46702.js.map": "/static/js/main.0aa46702.js.map"
   },
   "entrypoints": [
-    "static/css/main.356ca728.css",
-    "static/js/main.ac7f77fa.js"
+    "static/css/main.46b3098f.css",
+    "static/js/main.0aa46702.js"
   ]
 }

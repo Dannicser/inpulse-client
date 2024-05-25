@@ -51,7 +51,7 @@
 }
 
 .do_info > p:nth-child(1) {
-  text-indent: 80px;
+  /* text-indent: 80px; */
 }
 
 .do_info > p:nth-child(2) {

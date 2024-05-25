@@ -13,6 +13,7 @@ import instagram from "./assets/instagram.svg";
 import linkedIn from "./assets/linkedln.svg";
 import telegram from "./assets/telegram.svg";
 import twitter from "./assets/twitter.svg";
+import tiktok from "./assets/tiktok.svg";
 
 import s from "./Footer.module.css";
 
@@ -20,6 +21,12 @@ import background from "./assets/background.png";
 
 export const Footer: React.FC = () => {
   const { t, i18n } = useTranslation();
+
+  const eng_mail_text =
+    "Hi,%0D%0A%0D%0AMy name is%0D%0AI'm reaching out because I believe we could do some truly amazing things together.%0D%0A%0D%0ALet's see how you can get my brand's pulse racing!%0D%0A%0D%0AMy contacts for getting in touch:%0D%0A%0D%0A---%0D%0ATell us about your project now and we will contact you shortly to discuss the details. We're looking forward to hearing your ideas!";
+
+  const ru_mail_text =
+    "Добрый день,%0D%0A%0D%0AМеня зовут%0D%0AЯ пишу вам, чтобы вы помогли ускорить пульс моего бренда в унисон с современными трендами!%0D%0A%0D%0AМои контакты для связи:%0D%0A%0D%0A---%0D%0AРасскажите нам о своем проекте, и мы свяжемся с вами в ближайшее время, чтобы обсудить детали. С нетерпением ждем ваших идей!";
 
   return (
     <footer id={"contacts"} className={`${s.footer} mb-3`}>
@@ -50,6 +57,9 @@ export const Footer: React.FC = () => {
                 <a target="_blank" href="https://x.com/inpulsenow">
                   <img src={twitter} alt="twitter" />
                 </a>
+                <a target="_blank" href="https://tiktok.com/@inpulsenow">
+                  <img src={tiktok} alt="tiktok" />
+                </a>
               </div>
             </div>
 
@@ -63,7 +73,7 @@ export const Footer: React.FC = () => {
 
             <form className={s.form}>
               <a
-                href="mailto:magic@inpulse.events?subject=In Pulse Brand Inquiry&body=hi%0D%0Ahi"
+                href={`mailto:magic@inpulse.events?subject=In Pulse Brand Inquiry&body=${i18n.language === "ru" ? ru_mail_text : eng_mail_text}`}
                 className={`${s.form_button} transition-opacity duration-500 hover:opacity-70`}
               >
                 {t("send")}
