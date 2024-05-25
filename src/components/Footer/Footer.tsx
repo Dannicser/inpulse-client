@@ -51,9 +51,11 @@ export const Footer: React.FC = () => {
                 <a target="_blank" href="https://linkedin.com/company/inpulsenow">
                   <img src={linkedIn} alt="linkedIn" />
                 </a>
-                <a target="_blank" href="https://t.me/inpulsenow">
-                  <img src={telegram} alt="telegram" />
-                </a>
+                {i18n.language === "ru" ? (
+                  <a target="_blank" href="https://t.me/inpulsenow">
+                    <img src={telegram} alt="telegram" />
+                  </a>
+                ) : null}
                 <a target="_blank" href="https://x.com/inpulsenow">
                   <img src={twitter} alt="twitter" />
                 </a>
