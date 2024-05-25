@@ -25,11 +25,10 @@ function App() {
       </Layout>
       <Layout classes={`max-lg:hidden xl:mx-[7.5rem] lg:mx-[5.5rem] md:mx-[3.5rem] mt-10`}>
         <SectionDo />
-      </Layout>
+      </Layout>{" "}
       <Layout classes={`xl:mx-[0rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[2rem] us:ml-[0rem] mt-20`}>
         <SectionBenefits />
       </Layout>
-
       <Footer />
     </div>
   );

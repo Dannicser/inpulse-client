@@ -83,7 +83,7 @@
     padding: 20px;
   }
   .experience_item {
-    width: 241px;
+    width: 235px;
     height: 267px;
     padding: 47px 70px;
   }
@@ -111,6 +111,10 @@
     width: 223px;
     height: 277px;
     padding: 25px 36px;
+  }
+
+  .experience_item {
+    width: 213px;
   }
 }
 

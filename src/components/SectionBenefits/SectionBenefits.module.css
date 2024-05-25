@@ -332,4 +332,8 @@
   .hashtags_item {
     padding: 6px;
   }
+
+  .hashtags {
+    font-size: 13px;
+  }
 }
