@@ -14,15 +14,17 @@ export const SectionDo: React.FC<ISectionDo> = ({ classes = "" }) => {
   return (
     <section className={`${classes}`} id={`${style.do}`}>
       <div className={`${style.do_inner}`}>
-        <div className={`${style.do_title}`}>
-          <span className={`${style.above_title} font-light`}>{t("what")}</span>
-          <h3 className={`${style.title}`}>
-            {t("we")} <span className={`${style.red}`}> {t("do")}</span>?
-          </h3>
+        <div className={`${style.do_inner_container}`}>
+          <div className={`${style.do_title}`}>
+            <span className={`${style.above_title} font-light`}>{t("what")}</span>
+            <h3 className={`${style.title}`}>
+              {t("we")} <span className={`${style.red}`}> {t("do")}</span>?
+            </h3>
+          </div>
+          <span className={`${style.do_hashtag}`}>
+            <span>{t("motto")}</span>
+          </span>
         </div>
-        <span className={`${style.do_hashtag}`}>
-          <span>{t("motto")}</span>
-        </span>
         <div className={`${style.do_info} font-Involve font-medium`}>
           <p className={`${style.description}`}>
             {t("do_text_up_left")}
