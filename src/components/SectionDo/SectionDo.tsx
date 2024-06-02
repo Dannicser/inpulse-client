@@ -12,7 +12,7 @@ export const SectionDo: React.FC<ISectionDo> = ({ classes = "" }) => {
   const { t, i18n } = useTranslation();
 
   return (
-    <section className={`${classes}`} id={`${style.do}`}>
+    <section className={`${classes} lg:mx-[5rem] max-md:mx-[0rem]`} id={`${style.do}`}>
       <div className={`${style.do_inner}`}>
         <div className={`${style.do_inner_container}`}>
           <div className={`${style.do_title}`}>

@@ -23,7 +23,7 @@ function App() {
       <Layout classes="xl:mx-[10rem] lg:mx-[5.5rem] md:mx-[3.5rem]">
         <SectionExperience />
       </Layout>
-      <Layout classes={`xl:mx-[7.5rem] lg:mx-[5.5rem] md:mx-[3.5rem] mt-10`}>
+      <Layout classes={`xl:mx-[10rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[2rem] us:mx-[1.3rem] mt-10`}>
         <SectionDo />
       </Layout>{" "}
       <Layout classes={`xl:mx-[0rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[2rem] us:ml-[0rem] mt-20`}>
