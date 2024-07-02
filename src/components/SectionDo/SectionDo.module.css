@@ -19,7 +19,7 @@
 .do_info > p {
   font-size: 26px;
   line-height: 38px;
-  width: 39%;
+  width: 45%;
   margin-left: auto;
   margin-right: 100px;
 }
@@ -93,7 +93,7 @@
   .do_info > p {
     font-size: 20px;
     line-height: 22px;
-    width: 60%;
+    width: 70%;
     margin-right: 15px;
   }
 }
@@ -123,6 +123,6 @@
 
 @media (max-width: 375px) {
   .do_info > p {
-    width: 70%;
+    width: 90%;
   }
 }

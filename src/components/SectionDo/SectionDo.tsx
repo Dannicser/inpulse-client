@@ -27,11 +27,10 @@ export const SectionDo: React.FC<ISectionDo> = ({ classes = "" }) => {
         </div>
         <div className={`${style.do_info} font-Involve font-medium`}>
           <p className={`${style.description}`}>
-            {t("do_text_up_left")}
-            <span> {t("do_text_up_right")}</span>
+            {t("do_text_up")}
             <br />
             <br />
-            <p className={`${style.grey}`}>{t("do_text")}</p>
+            <p className={`${style.grey}`}>{t("do_text_down")}</p>
           </p>
         </div>
       </div>

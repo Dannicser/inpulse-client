@@ -104,6 +104,10 @@
     height: 267px;
     padding: 36px 50px;
   }
+
+  .experience_item:nth-child(3) {
+    padding-bottom: 65px;
+  }
 }
 
 @media (max-width: 360px) {

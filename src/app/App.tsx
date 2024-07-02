@@ -18,7 +18,6 @@ function App() {
         <Header classes="xl:mb-10 lg:mb-10 md:mb-10 sm:mb-7 xs:mb-4 us:mb-4" />
         <LiquidAnimation classes="mb-12" />
       </Layout>
-      <TextSlider classes={`mt-[1rem]`} />
       <TitleDivider classes={`mt-[5rem]`} />
       <Layout classes="xl:mx-[10rem] lg:mx-[5.5rem] md:mx-[3.5rem]">
         <SectionExperience />
