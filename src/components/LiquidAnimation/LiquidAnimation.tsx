@@ -45,7 +45,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
   function engText() {
     return (
       <>
-        <div className={`${style.sub_title_text}`}>
+        <div className={`${style.sub_title_text} ${style.sub_title_en}`}>
           {width >= 800 ? (
             <>
               {t("in_pulse_is_a_global")} {t("event_agency")}
@@ -58,7 +58,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
         </div>
         {width >= 529 ? (
           <>
-            <div className={`${style.title_text_en}`}>
+            <div className={`${style.title_text}`}>
               {t("bridging")} <br /> {t("cultures")} {t("to")}
               <span> {t("create")}</span> <br />
               <span className={`text-[#E11800]`}>{t("effective")}</span> {t("business")} <br /> {t("solutions")}
@@ -66,7 +66,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
           </>
         ) : (
           <>
-            <div className={`${style.title_text_en}`}>
+            <div className={`${style.title_text}`}>
               {t("bridging")} <br /> {t("cultures")} {t("to")} <br />
               <span> {t("create")}</span>
               <span className={`text-[#E11800]`}> {t("effective")}</span> <br /> {t("business")} <br /> {t("solutions")}
@@ -90,7 +90,7 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
           </>
         )}
         <>
-          <div className={`${style.title_text_en}`}>
+          <div className={`${style.title_text}`}>
             <span> {t("create")}</span>
             <br />
             <span className={`text-[#E11800]`}>{t("unstandart")}</span>
