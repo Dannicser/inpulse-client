@@ -35,6 +35,10 @@ export const Slider: React.FC = () => {
     setNumber((prev) => prev - 1);
   }
 
+  function changeSlide(position: number) {
+    setNumber(position);
+  }
+
   return (
     <div className={style.Slider}>
       <div className={style.arrows}>
@@ -45,9 +49,13 @@ export const Slider: React.FC = () => {
           <img src={right_arrow} alt="" />
         </div>
       </div>
-
       <div className={style.sliders}>
         <img src={slides[number]} alt="" />
+        <div className={style.points}>
+          {slides.map((_, i) => {
+            return <div onClick={() => changeSlide(i)} className={`${style.point} ${i === number ? style.active_point : ""}`}></div>;
+          })}
+        </div>
       </div>
     </div>
   );
