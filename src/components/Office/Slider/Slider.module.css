@@ -1,0 +1,50 @@
+.Slider {
+  position: relative;
+
+  max-width: 520px;
+  max-height: 620px;
+}
+
+.arrows {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  padding: 25px;
+}
+
+.arrow_left,
+.arrow_right {
+  cursor: pointer;
+  transition: 0.7s all;
+}
+
+.arrows .arrow_left {
+  margin-right: 5px;
+}
+
+.arrow_left:hover {
+  opacity: 0.8;
+}
+
+.arrow_right:hover {
+  opacity: 0.8;
+}
+
+.sliders img {
+  animation-name: slow;
+  animation-duration: 1.5s;
+}
+
+.sliders img {
+  border-radius: 25px;
+}
+
+@keyframes slow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

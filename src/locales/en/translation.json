@@ -51,5 +51,9 @@
   "create": "CREATE",
   "effective": "EFFECTIVE",
   "business": "BUSINESS",
-  "solutions": "SOLUTIONS"
+  "solutions": "SOLUTIONS",
+  "our_main": "OUR MAIN",
+  "office": "OFFICE IN",
+  "new_york": "NEW YORK",
+  "office_desc": " Our main office is located in New York City, the world capital of contemporary art. Collaborating with experimental spaces and art galleries, we organize events in a variety of formats, from private dinners and cocktail receptions to exhibitions and multimedia performances"
 }

@@ -2,12 +2,11 @@ import { Header } from "../components/Header/Header";
 import { Layout } from "../components/Layout/Layout";
 import { LiquidAnimation } from "../components/LiquidAnimation/LiquidAnimation";
 import { SectionDo } from "../components/SectionDo/SectionDo";
-import { TextSlider } from "../components/TextSlider/TextSlider";
 import { TitleDivider } from "../components/TitleDivider/TitleDivider";
 import { SectionBenefits } from "../components/SectionBenefits/SectionBenefits";
 import { Footer } from "../components/Footer/Footer";
-
 import { SectionExperience } from "../components/SectionExperience/SectionExperience";
+import { Office } from "../components/Office/Office/Office";
 
 import style from "./App.module.css";
 
@@ -27,6 +26,9 @@ function App() {
       </Layout>{" "}
       <Layout classes={`xl:mx-[0rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[2rem] us:ml-[0rem] mt-20`}>
         <SectionBenefits />
+      </Layout>
+      <Layout classes={`xl:mx-[0rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[2rem] us:mx-[1rem] mt-20`}>
+        <Office classes={`mb-10`} />
       </Layout>
       <Footer />
     </div>

@@ -19,7 +19,11 @@ import s from "./Footer.module.css";
 
 import background from "./assets/background.png";
 
-export const Footer: React.FC = () => {
+interface IFooterProps {
+  classes?: string;
+}
+
+export const Footer: React.FC<IFooterProps> = ({ classes = "" }) => {
   const { t, i18n } = useTranslation();
 
   const eng_mail_text =
@@ -29,7 +33,7 @@ export const Footer: React.FC = () => {
     "Добрый день,%0D%0A%0D%0AМеня зовут%0D%0AЯ пишу вам, чтобы вы помогли ускорить пульс моего бренда в унисон с современными трендами!%0D%0A%0D%0AМои контакты для связи:%0D%0A%0D%0A---%0D%0AРасскажите нам о своем проекте, и мы свяжемся с вами в ближайшее время, чтобы обсудить детали. С нетерпением ждем ваших идей!";
 
   return (
-    <footer id={"contacts"} className={`${s.footer} mb-3`}>
+    <footer id={"contacts"} className={`${s.footer} ${classes} mb-3`}>
       <div className={s.footer_top} style={{ backgroundImage: `url(${vector})` }}>
         <Layout classes={`xl:mx-[7.5rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[1rem] xs:mx-[1rem] us:mx-[1.875rem] mt-20`}>
           <div className={s.footer_top_grid}>
