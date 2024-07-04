@@ -1,6 +1,6 @@
 {
   "name": "inpulse",
-  "homepage": "",
+  "homepage": "https://dannicser.github.io/inpulse-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

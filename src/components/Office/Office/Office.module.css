@@ -135,3 +135,11 @@
     line-height: 25.2px;
   }
 }
+
+@media (max-width: 370px) {
+  .title_middle,
+  .title_down {
+    font-size: 38px;
+    line-height: 40px;
+  }
+}

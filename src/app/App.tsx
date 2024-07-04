@@ -28,7 +28,7 @@ function App() {
         <SectionBenefits />
       </Layout>
       <Layout classes={`xl:mx-[0rem] lg:mx-[5.5rem] md:mx-[3.5rem] sm:mx-[2rem] us:mx-[1rem] mt-20`}>
-        <Office classes={`mb-10`} />
+        <Office classes={`mb-20 max-sm:mb-1`} />
       </Layout>
       <Footer />
     </div>
