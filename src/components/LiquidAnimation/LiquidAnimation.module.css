@@ -57,6 +57,7 @@
 }
 
 .title_container {
+  bottom: 20px;
   position: absolute;
 }
 
@@ -66,9 +67,9 @@
 
 /*  */
 
-.title_text {
-  font-size: 42px;
-  line-height: 44.92px;
+.title_text_en {
+  font-size: 32px;
+  line-height: 34px;
   font-weight: 500;
   color: black;
   margin-top: 20px;
@@ -79,32 +80,9 @@
   line-height: 15.36px;
 }
 
-.title_text_ru {
-  font-size: 40px;
-  line-height: 40px;
-}
-
 /*  */
 
-@media (max-width: 1439px) {
-  .title_text {
-    font-size: 35.87px;
-    line-height: 37.92px;
-  }
-
-  .title_text_ru {
-    font-size: 37px;
-    line-height: 36px;
-  }
-}
-
 @media (max-width: 1370px) {
-  .title_text_ru {
-    font-size: 35px;
-    line-height: 34px;
-    margin-top: 10px;
-  }
-
   .circle_explore {
     width: 124px;
     height: 124px;
@@ -112,21 +90,9 @@
 }
 
 @media (max-width: 1198px) {
-  .title_text {
-    font-size: 29px;
-    line-height: 32.92px;
-    margin-top: 10px;
-  }
-
   .circle_explore_text {
     font-size: 14px;
     line-height: 15px;
-  }
-
-  .title_text_ru {
-    font-size: 30px;
-    line-height: 30px;
-    margin-top: 5px;
   }
 
   .circle_explore {
@@ -150,12 +116,6 @@
 }
 
 @media (max-width: 950px) {
-  .title_text {
-    font-size: 29px;
-    line-height: 28.92px;
-    margin-top: 5px;
-  }
-
   .circle_explore {
     width: 95px;
     height: 95px;
@@ -163,20 +123,8 @@
 }
 
 @media (max-width: 900px) {
-  .title_text {
-    font-size: 26px;
-    line-height: 27.92px;
-    margin-top: 10px;
-  }
-
   .sub_title_text {
     font-size: 11px;
-  }
-
-  .title_text_ru {
-    font-size: 25px;
-    line-height: 25px;
-    margin-top: 2px;
   }
 
   .circle_explore {
@@ -204,66 +152,47 @@
   }
 }
 
-@media (max-width: 780px) {
-  .title_text_ru {
-    font-size: 22px;
-    line-height: 25px;
-  }
-}
-
-/*  */
-
-@media (max-width: 767px) {
-  .title_text {
-    font-size: 32px;
-    margin-top: 10px;
-  }
-
-  .title_text_ru {
-    font-size: 25px;
-    line-height: 30px;
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 734px) {
-  .title_text_ru {
-    font-size: 22px;
-    line-height: 25px;
+@media (max-width: 800px) {
+  .title_text_en {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (max-width: 660px) {
-  .title_text {
-    font-size: 28px;
+  .sub_title_text {
+    font-size: 11px;
+    line-height: 11px;
   }
 
-  .title_text_ru {
-    font-size: 20px;
-    line-height: 22px;
+  .title_text_en {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 17px;
   }
 
   .circle_explore {
     width: 90px;
     height: 90px;
   }
+
   .circle_explore_text {
     font-size: 12px;
   }
 }
 
 @media (max-width: 581px) {
-  .title_text {
-    font-size: 23px;
-    line-height: 27.92px;
-  }
-  .sub_title_text {
-    font-size: 9px;
+  .title_container {
+    bottom: 15px;
   }
 
-  .title_text_ru {
-    font-size: 18px;
-    line-height: 18px;
+  .title_text_en {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .sub_title_text {
+    font-size: 9px;
   }
 
   .circle_explore {
@@ -280,7 +209,13 @@
   }
 }
 
+/* mobile */
 @media (max-width: 528px) {
+  .title_text_en {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
   .circle_explore {
     width: 94px;
     height: 94px;
@@ -288,13 +223,9 @@
     top: 10px;
   }
 
-  .title_text {
-    font-size: 34px;
-    line-height: 36.92px;
-  }
-
   .sub_title_text {
-    font-size: 9px;
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
@@ -306,34 +237,21 @@
 }
 
 @media (max-width: 490px) {
-  .title_text {
-    font-size: 30px;
-    line-height: 32.92px;
-  }
-
   .circle_explore_text {
     font-size: 11px;
     line-height: 10px;
   }
 
-  .title_text_ru {
-    font-size: 30px;
-    line-height: 30px;
-  }
-
   .sub_title_text {
     font-size: 13px;
+    line-height: 13px;
   }
 }
 
 @media (max-width: 450px) {
-  .title_text {
-    font-size: 28px;
-    line-height: 30.92px;
-  }
-  .title_text_ru {
-    font-size: 22px;
-    line-height: 24px;
+  .title_text_en {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .circle_explore {
@@ -351,17 +269,24 @@
 }
 
 @media (max-width: 420px) {
-  .title_text {
-    font-size: 23px;
+  .title_container {
+    bottom: 10px;
+  }
+
+  .title_text_en {
+    margin-top: 5px;
   }
 
   .sub_title_text {
     font-size: 11px;
+    line-height: 11px;
   }
+}
 
-  .title_text_ru {
-    font-size: 20px;
-    line-height: 24px;
+@media (max-width: 390px) {
+  .title_text_en {
+    font-size: 17px;
+    line-height: 17px;
   }
 }
 
@@ -378,25 +303,17 @@
 }
 
 @media (max-width: 370px) {
-  .title_text {
-    font-size: 20px;
-    line-height: 23.92px;
-  }
-
-  .title_text_ru {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .sub_title_text {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 
 @media (max-width: 350px) {
-  .sub_title_text {
-    font-size: 9px;
+  .title_text_en {
+    font-size: 16px;
+    line-height: 16px;
   }
+
   .circle_explore {
     width: 60px;
     height: 60px;
@@ -405,10 +322,5 @@
   .circle_explore_text {
     font-size: 8px;
     line-height: 8px;
-  }
-
-  .title_text_ru {
-    font-size: 17px;
-    line-height: 18px;
   }
 }

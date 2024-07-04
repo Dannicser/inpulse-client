@@ -42,27 +42,79 @@ export const LiquidAnimation: React.FC<ILiquidAnimationProps> = ({ classes }) =>
     return bg_image_mobile;
   }
 
+  function engText() {
+    return (
+      <>
+        <div className={`${style.sub_title_text}`}>
+          {width >= 800 ? (
+            <>
+              {t("in_pulse_is_a_global")} {t("event_agency")}
+            </>
+          ) : (
+            <>
+              {t("in_pulse_is_a_global")} <br /> {t("event_agency")}
+            </>
+          )}
+        </div>
+        {width >= 529 ? (
+          <>
+            <div className={`${style.title_text_en}`}>
+              {t("bridging")} <br /> {t("cultures")} {t("to")}
+              <span> {t("create")}</span> <br />
+              <span className={`text-[#E11800]`}>{t("effective")}</span> {t("business")} <br /> {t("solutions")}
+            </div>
+          </>
+        ) : (
+          <>
+            <div className={`${style.title_text_en}`}>
+              {t("bridging")} <br /> {t("cultures")} {t("to")} <br />
+              <span> {t("create")}</span>
+              <span className={`text-[#E11800]`}> {t("effective")}</span> <br /> {t("business")} <br /> {t("solutions")}
+            </div>
+          </>
+        )}
+      </>
+    );
+  }
+
+  function ruText() {
+    return (
+      <div className={`${style.sub_title_text}`}>
+        {width >= 800 ? (
+          <>
+            {t("in_pulse_is_a_global")} {t("event_agency")}
+          </>
+        ) : (
+          <>
+            {t("in_pulse_is_a_global")} <br /> {t("event_agency")}
+          </>
+        )}
+        <>
+          <div className={`${style.title_text_en}`}>
+            <span> {t("create")}</span>
+            <br />
+            <span className={`text-[#E11800]`}>{t("unstandart")}</span>
+            <br />
+            {t("business")}-{t("solutions")}
+            <br />
+            {t("joint")} {t("culture")}
+          </div>
+        </>
+      </div>
+    );
+  }
+
   return (
     <div id="home" className={`${style.LiquidAnimation} ${classes}`}>
       <img src={selectBackground()} className={`${style.bg_image}`} />
-
       <div className={`${style.circle_explore}`}>
         <div className={`${style.circle_explore_text}`}>
           <div>{t("explore")}</div>
           <div>{t("explore_more")}</div>
-        </div>{" "}
+        </div>
         <img src={lock} className={style.circle_explore_lock} alt="" />
       </div>
-      <div className={`${style.title_container} bottom-[0.5rem]`}>
-        <div className={`${style.sub_title_text} font-Involve font-light`}>
-          <span>{t("in_pulse_en")}</span> <span>{t("in_pulse_ru")} </span>
-          {t("pulse_sub_title_ru")}
-        </div>
-        <div className={`${style.title_text} ${i18n.language === "ru" ? style.title_text_ru : ""} `}>
-          {t("where")} <br /> {t("digital")} {t("digital") ? <br /> : ""} <span className={`text-[#E11800]`}>{t("art")} </span>
-          {t("in")} <br /> {t("comes")} {t("reality")}
-        </div>
-      </div>
+      <div className={`${style.title_container}`}>{i18n.language === "ru" ? ruText() : engText()}</div>
     </div>
   );
 };
