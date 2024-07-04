@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/inpulse-client/static/css/main.c06f5d04.css",
-    "main.js": "/inpulse-client/static/js/main.88000484.js",
+    "main.css": "/inpulse-client/static/css/main.37e28bc9.css",
+    "main.js": "/inpulse-client/static/js/main.9e43752a.js",
     "static/media/one.png": "/inpulse-client/static/media/one.726508076b85d70ccf2a.png",
     "static/media/three.png": "/inpulse-client/static/media/three.260ed3b3d999a70dfab4.png",
     "static/media/slide_four.jpeg": "/inpulse-client/static/media/slide_four.b00cd7c19b0831e66e91.jpeg",
@@ -36,11 +36,11 @@
     "static/media/experience-icon-1.svg": "/inpulse-client/static/media/experience-icon-1.23ba7e009c2df2feae5fcfccedff89bb.svg",
     "static/media/tiktok.svg": "/inpulse-client/static/media/tiktok.78e84ff436da474aab4455e511260afa.svg",
     "static/media/cross.svg": "/inpulse-client/static/media/cross.2001e956d267bc9b1a2349ee0a8ee521.svg",
-    "main.c06f5d04.css.map": "/inpulse-client/static/css/main.c06f5d04.css.map",
-    "main.88000484.js.map": "/inpulse-client/static/js/main.88000484.js.map"
+    "main.37e28bc9.css.map": "/inpulse-client/static/css/main.37e28bc9.css.map",
+    "main.9e43752a.js.map": "/inpulse-client/static/js/main.9e43752a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c06f5d04.css",
-    "static/js/main.88000484.js"
+    "static/css/main.37e28bc9.css",
+    "static/js/main.9e43752a.js"
   ]
 }
