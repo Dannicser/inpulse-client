@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/inpulse-client/static/css/main.00132e67.css",
-    "main.js": "/inpulse-client/static/js/main.978300fb.js",
+    "main.js": "/inpulse-client/static/js/main.8bd9ddee.js",
     "static/media/mobile.png": "/inpulse-client/static/media/mobile.4e8876659f92254748c6.png",
     "static/media/tablet.png": "/inpulse-client/static/media/tablet.b55f7a5553f52228d6af.png",
     "static/media/desktop.png": "/inpulse-client/static/media/desktop.f613ad7873c136bb95cf.png",
@@ -37,10 +37,10 @@
     "static/media/tiktok.svg": "/inpulse-client/static/media/tiktok.78e84ff436da474aab4455e511260afa.svg",
     "static/media/cross.svg": "/inpulse-client/static/media/cross.2001e956d267bc9b1a2349ee0a8ee521.svg",
     "main.00132e67.css.map": "/inpulse-client/static/css/main.00132e67.css.map",
-    "main.978300fb.js.map": "/inpulse-client/static/js/main.978300fb.js.map"
+    "main.8bd9ddee.js.map": "/inpulse-client/static/js/main.8bd9ddee.js.map"
   },
   "entrypoints": [
     "static/css/main.00132e67.css",
-    "static/js/main.978300fb.js"
+    "static/js/main.8bd9ddee.js"
   ]
 }
